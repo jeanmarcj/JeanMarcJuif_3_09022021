@@ -22,3 +22,6 @@ robots.txt
 site.webmanifest
 tile-wide.png
 tile.png
+
+# SASS installé en local pour ce projet
+/dart-sass
