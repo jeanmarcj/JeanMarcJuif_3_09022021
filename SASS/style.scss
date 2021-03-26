@@ -1,6 +1,9 @@
 @import "libs/normalize.scss";
 
+// Lancer SASS pour ce projet :
+// ./dart-sass/sass SASS/style.scss css/main.css --watch
+
 body {
-    background: black;
-    color: white;
+    background: lightgray;
+    color: black;
 }
