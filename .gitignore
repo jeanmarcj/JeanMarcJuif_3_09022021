@@ -25,3 +25,6 @@ tile.png
 
 # SASS installé en local pour ce projet
 dart-sass/
+
+# Maquettes du projet
+maquettes/
