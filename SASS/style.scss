@@ -28,5 +28,41 @@ body {
         display: block;
         margin: 1.375rem auto;
         width: 10.125rem;
-}
+    }
 
+/*  ---------
+    #location
+    --------- */
+    #location {
+        // border-top: 3px solid black;
+        width: 100vw;
+        height: 3.06rem;
+        background-color: var(--ohmyfood-darkgray);
+        box-shadow: 1px 3px 3px 0px rgba(213,213,213,0.75) inset;
+            -webkit-box-shadow: 1px 3px 3px 0px rgba(213,213,213,0.75) inset;
+            -moz-box-shadow: 1px 3px 3px 0px rgba(213,213,213,0.75) inset;
+        text-align: center;
+    }
+
+    #location i,
+    #location span {
+        color: #353535;
+        font-size: 0.95rem;
+        padding-top: 1rem;
+    }
+
+    #location i {
+        padding-right: 1rem;
+        margin-left: -1.8rem;
+    }
+    #location span {
+        font-weight: 500;
+    }
+
+/*  ---------
+    Footer
+    --------- */
+
+    footer .footer-container img {
+        width: 10.125rem; 
+    }
