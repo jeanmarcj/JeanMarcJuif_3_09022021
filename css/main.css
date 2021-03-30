@@ -442,7 +442,6 @@ nav img {
 }
 
 #operation h2 {
-  border: 1px solid green;
   font-size: 1.45rem;
   margin-top: 0;
   padding-left: 1.31rem;
@@ -450,6 +449,38 @@ nav img {
 
 #operation .operation-container {
   margin-top: 2.125rem;
+}
+
+#operation .operation-container .operation-card {
+  border: 1px solid blueviolet;
+  width: 80%;
+  max-width: 20.5rem;
+  height: 4.625rem;
+  position: relative;
+  margin: 0 auto 2rem auto;
+  border-radius: 30px;
+  line-height: 4.7rem;
+  background-color: var(--ohmyfood-lightgray);
+}
+
+#operation .operation-container .operation-card .badge {
+  border: 1px solid var(--ohmyfood-primaire);
+  height: 1.44rem;
+  width: 1.44rem;
+  border-radius: 50%;
+  background-color: var(--ohmyfood-primaire);
+  color: white;
+  line-height: 1.44rem;
+  font-size: 1rem;
+  padding: 0.3rem;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: -15px;
+}
+
+#operation .operation-container .operation-card .operation-title {
+  border: 1px solid green;
 }
 
 /*  ---------
