@@ -504,6 +504,16 @@ nav img {
     ------------------- */
 #restaurants {
   border: 1px solid red;
+  background-color: var(--ohmyfood-lightgray);
+}
+
+.container {
+  border: 1px solid green;
+  margin: 0 1.25rem;
+}
+
+#restaurants h2 {
+  margin: 0;
 }
 
 /*  ---------
