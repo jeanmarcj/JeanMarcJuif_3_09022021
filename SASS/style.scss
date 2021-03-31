@@ -184,8 +184,9 @@ img {
 
     #restaurants article {
         // border: 1px solid black;
-        margin-bottom: 1.125rem;
+        margin: 0 auto 1.125rem auto;
         height: 15.75rem;
+        width: 18rem;
         border-radius: 15px;
         box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
         -webkit-box-shadow: 5px 3px 14px 0px rgba(146,146,146,0.65);
@@ -220,9 +221,29 @@ img {
         background-color: var(--ohmyfood-tertiaire);
         color: #008766;
         position: absolute;
-        left: 244px;
+        left: 190px;
         top: 14px;
     }
+    .card-footer {
+        border: 1px solid blue;
+        margin: 1.25rem 0.9rem 0 1rem;
+        position: relative;
+    }
+    .card-footer h3,
+    .card-footer p {
+        margin: 0;
+    }
+    .card-footer p {
+        margin-top: 0.3rem;
+    }
+    .card-footer i {
+        color: var(--ohmyfood-secondaire);
+        font-size: 1.3rem;
+        position: absolute;
+        top: 0;
+        left: 221px;
+    }
+
 
 /*  ---------
     Footer
@@ -236,14 +257,26 @@ img {
     ====================== */
     @media only screen and (min-width: 375px) {
         /* Header */
-        #reservation h1 {
-            font-size: 1.5rem;
-        }
-        #reservation p {
-            font-size: 1.2rem;
-        }
-        #operation .operation-container .operation-card .operation-title {
-            font-size: 1rem;
-        }
+            #reservation h1 {
+                font-size: 1.5rem;
+            }
+            #reservation p {
+                font-size: 1.2rem;
+            }
+            #operation .operation-container .operation-card .operation-title {
+                font-size: 1rem;
+            }
+        /* Restaurants */
+            #restaurants article {
+                width: 21rem;
+                max-width: 21rem;
+            }
+            .card-img span {
+                left: 244px;
+                top: 14px;
+            }
+            .card-footer i {
+                left: 275px;
+            }
         
       }
