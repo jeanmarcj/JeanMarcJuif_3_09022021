@@ -12,7 +12,8 @@
     --ohmyfood-mediumgray: #eaeaea;
     --ohmyfood-lightgray: #f6f6f6;
     --ohmyfood-darkgray: #7e7e7e;
-  }
+    --ohmyfood-footerbg: #353535;
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -169,8 +170,10 @@ img {
     #restaurants
     ------------------- */
     #restaurants {
-        // border: 1px solid red;
+        border: 1px solid red;
         background-color: var(--ohmyfood-lightgray);
+        padding-bottom: 4rem;
+
     }
     .container {
         // border: 1px solid green;
@@ -186,13 +189,12 @@ img {
         // border: 1px solid black;
         margin: 0 auto 1.125rem auto;
         height: 15.75rem;
-        width: 18rem;
+        width: 17rem;
         border-radius: 15px;
         box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
         -webkit-box-shadow: 5px 3px 14px 0px rgba(146,146,146,0.65);
         -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
     }
-
     .card-img {
         // border: 1px solid red;
         border-radius: 15px;
@@ -225,7 +227,7 @@ img {
         top: 14px;
     }
     .card-footer {
-        border: 1px solid blue;
+        // border: 1px solid blue;
         margin: 1.25rem 0.9rem 0 1rem;
         position: relative;
     }
@@ -233,23 +235,47 @@ img {
     .card-footer p {
         margin: 0;
     }
+    article:nth-child(3) .card-footer > h3::first-letter {
+        text-transform: uppercase;
+    }
     .card-footer p {
         margin-top: 0.3rem;
     }
     .card-footer i {
-        color: var(--ohmyfood-secondaire);
+        color: black;
         font-size: 1.3rem;
         position: absolute;
         top: 0;
         left: 221px;
     }
-
+    .card-footer i:hover {
+        color: var(--ohmyfood-secondaire);
+        cursor: pointer;
+    }
 
 /*  ---------
     Footer
     --------- */
-    footer .footer-container img {
-        width: 10.125rem;
+    footer {
+        background-color: var(--ohmyfood-footerbg);
+    }
+    .footer-container {
+        margin: 0 1.25rem;
+    }
+    footer img {
+        display: block;
+        width: 6rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+    .footer-container a {
+        display: block;
+        color: white;
+        font-weight: 300;
+        text-decoration: none;
+        line-height: 1.5rem;
+    }
+    .footer-container a:last-child {
+        padding-bottom: 2.3125rem;
     }
 
 /*  ======================
