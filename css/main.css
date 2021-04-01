@@ -509,7 +509,6 @@ nav img {
     #restaurants
     ------------------- */
 #restaurants {
-  border: 1px solid red;
   background-color: var(--ohmyfood-lightgray);
   padding-bottom: 4rem;
 }
@@ -610,7 +609,7 @@ footer {
 
 footer img {
   display: block;
-  width: 6rem;
+  width: 6.5rem;
   padding: 1.5rem 0 1rem 0;
 }
 
@@ -627,13 +626,21 @@ footer img {
 }
 
 .footer-container a:nth-child(2) i {
-  border: 1px solid red;
   font-size: 1rem;
 }
 
 .footer-container a:nth-child(3) i {
-  border: 1px solid green;
   font-size: 0.6rem;
+}
+
+.footer-container a span {
+  padding-left: 0.4rem;
+}
+
+.footer-container a span:hover,
+.footer-container > a:nth-child(4):hover,
+.footer-container > a:nth-child(5):hover {
+  text-decoration: underline;
 }
 
 /*  ======================

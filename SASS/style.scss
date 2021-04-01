@@ -170,7 +170,7 @@ img {
     #restaurants
     ------------------- */
     #restaurants {
-        border: 1px solid red;
+        // border: 1px solid red;
         background-color: var(--ohmyfood-lightgray);
         padding-bottom: 4rem;
 
@@ -264,7 +264,7 @@ img {
     }
     footer img {
         display: block;
-        width: 6rem;
+        width: 6.5rem;
         padding: 1.5rem 0 1rem 0;
     }
     .footer-container a {
@@ -278,12 +278,20 @@ img {
         padding-bottom: 2.3125rem;
     }
     .footer-container a:nth-child(2) i {
-        border: 1px solid red;
+        // border: 1px solid red;
         font-size: 1rem;
     }
     .footer-container a:nth-child(3) i {
-        border: 1px solid green;
+        // border: 1px solid green;
         font-size: 0.60rem;
+    }
+    .footer-container a span {
+        padding-left: 0.4rem;
+    }
+    .footer-container a span:hover,
+    .footer-container > a:nth-child(4):hover,
+    .footer-container > a:nth-child(5):hover {
+        text-decoration: underline;
     }
 
 /*  ======================
