@@ -1,3 +1,6 @@
 Cartouches Fonctionnement :
 Tester le code en display flex.
 En position absolute corriger le positionnement des icones et la hauteur en version XSmall.
+
+Question mentor :
+1) Code de l'espacement entre l'icone et le texte dans le footer.
