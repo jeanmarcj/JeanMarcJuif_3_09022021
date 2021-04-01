@@ -26,6 +26,12 @@ img {
     width: 100%;
     height: auto;
 }
+a:visited,
+a:link,
+a:focus,
+a:active {
+    color:black;
+}
 
 /*  ------
     logo
@@ -194,6 +200,12 @@ img {
         box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
         -webkit-box-shadow: 5px 3px 14px 0px rgba(146,146,146,0.65);
         -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+    }
+    #restaurants article:hover {
+        background-color: var(--ohmyfood-tertiaire);
+    }
+    #restaurants article a {
+        text-decoration: none;
     }
     .card-img {
         // border: 1px solid red;
