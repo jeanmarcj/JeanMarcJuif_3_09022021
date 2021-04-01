@@ -1,3 +1,64 @@
-h1 {
-    color: red;
+:root {
+    --ohmyfood-primaire: #9356DC;
+    --ohmyfood-secondaire: #FF79DA;
+    --ohmyfood-tertiaire: #99E2D0;
+    --ohmyfood-mediumgray: #eaeaea;
+    --ohmyfood-lightgray: #f6f6f6;
+    --ohmyfood-darkgray: #7e7e7e;
+    --ohmyfood-footerbg: #353535;
 }
+
+h1 {
+    margin: 0;
+}
+
+/*  --------
+    logo/nav
+    -------- */
+nav {
+    /* border: 1px solid blue; */
+    /* height: 5rem; */
+    position: relative;
+}
+
+nav i {
+    font-size: 1.5rem;
+    color: var(--ohmyfood-footerbg);
+    position: absolute;
+    left: 1.44rem;
+    top: 0.1rem;
+}
+
+.img-container {
+    /* border: 1px solid green; */
+    height: 16.56rem;
+    background-image: url(../img/restaurants/palette_du_gout.jpg);
+    background-size: cover;
+}
+
+/*  --------
+    menu
+    -------- */
+    .menu-wrapper {
+        border: 1px solid var(--ohmyfood-lightgray);
+        margin: -3.5rem auto 0 auto;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        background-color: var(--ohmyfood-lightgray);
+    }
+    .menu-header {
+        border: 1px solid red;
+        margin: 2.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-header h1 {
+        /* border: 1px solid blue; */
+        font-family: "Shrikhand", sans-serif;
+        /* font-weight: lighter; */
+        font-size: 1.4rem;
+        letter-spacing: 0.05rem;
+    }
+    .menu-header i {
+        font-size: 1.6rem;
+    }
