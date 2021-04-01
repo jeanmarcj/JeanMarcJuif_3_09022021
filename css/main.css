@@ -626,6 +626,16 @@ footer img {
   padding-bottom: 2.3125rem;
 }
 
+.footer-container a:nth-child(2) i {
+  border: 1px solid red;
+  font-size: 1rem;
+}
+
+.footer-container a:nth-child(3) i {
+  border: 1px solid green;
+  font-size: 0.6rem;
+}
+
 /*  ======================
     Mobile M >375px
     ====================== */
