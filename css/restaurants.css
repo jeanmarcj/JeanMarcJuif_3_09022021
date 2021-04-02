@@ -131,20 +131,9 @@ p {
     .menu-order {
         /* border: 1px solid green; */
         text-align: center;
+        /* margin-bottom: 2.16rem; */
     }
-    .btn-order {
-        margin-top: 0 auto;
-        width:11.56rem;
-        height: 3.06rem;
-        color: white;
-        border: 0px solid white;
-        border-radius: 40px;
-        box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
-            -webkit-box-shadow: 3px 3px 12px 0px rgba(177,107,107,0.36);
-            -moz-box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
-        background: -moz-linear-gradient(top,  rgba(255,163,229,0.91) 0%, rgba(252,155,227,0.91) 8%, rgba(235,115,218,0.95) 47%, rgba(161,91,219,1) 93%);
-        background: -webkit-linear-gradient(top,  rgba(255,163,229,0.91) 0%,rgba(252,155,227,0.91) 8%,rgba(235,115,218,0.95) 47%,rgba(161,91,219,1) 93%);
-        background: linear-gradient(to bottom,  rgba(255,163,229,0.91) 0%,rgba(252,155,227,0.91) 8%,rgba(235,115,218,0.95) 47%,rgba(161,91,219,1) 93%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ffa3e5', endColorstr='#a15bdb',GradientType=0 );
+    .btn {
+        padding: 0 3.06rem;
     }
     
