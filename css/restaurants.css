@@ -8,46 +8,67 @@
     --ohmyfood-footerbg: #353535;
 }
 
-h1 {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
+
+/*  ------------
+    Custom class
+    ------------ */
+    .menu-title {
+        font-weight: 300;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .divider {
+        width: 2.2rem;
+        height: 3px;
+        border: 0;
+        margin: 0.3rem 0 0.82rem 0;
+        background: var(--ohmyfood-tertiaire);
+    }
 
 /*  --------
     logo/nav
     -------- */
-nav {
-    /* border: 1px solid blue; */
-    /* height: 5rem; */
-    position: relative;
-}
+    nav {
+        /* border: 1px solid blue; */
+        /* height: 5rem; */
+        position: relative;
+    }
 
-nav i {
-    font-size: 1.5rem;
-    color: var(--ohmyfood-footerbg);
-    position: absolute;
-    left: 1.44rem;
-    top: 0.1rem;
-}
+    nav i {
+        font-size: 1.5rem;
+        color: var(--ohmyfood-footerbg);
+        position: absolute;
+        left: 1.44rem;
+        top: 0.1rem;
+    }
 
-.img-container {
-    /* border: 1px solid green; */
-    height: 16.56rem;
-    background-image: url(../img/restaurants/palette_du_gout.jpg);
-    background-size: cover;
-}
+    .img-container {
+        /* border: 1px solid green; */
+        height: 16.56rem;
+        background-image: url(../img/restaurants/palette_du_gout.jpg);
+        background-size: cover;
+    }
 
-/*  --------
-    menu
-    -------- */
-    .menu-wrapper {
+/*  -----------
+    menu - main
+    ----------- */
+    .menu-container {
+        /* Conserver une bordure ! */
         border: 1px solid var(--ohmyfood-lightgray);
+        border: 1px solid red;
         margin: -3.5rem auto 0 auto;
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
-        background-color: var(--ohmyfood-lightgray);
+        background-color: var(--ohmyfood-mediumgray);
     }
     .menu-header {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: 2.5rem 1rem;
         display: flex;
         justify-content: space-between;
@@ -61,4 +82,48 @@ nav i {
     }
     .menu-header i {
         font-size: 1.6rem;
+    }
+
+/*  -----------
+    menu
+    ----------- */
+    .menu {
+    /* border: 1px solid brown; */
+    margin: 2.5rem 1rem;
+    }
+    
+    section {
+        margin-bottom: 2.06rem;
+    }
+
+    article {
+        border: 1px solid white;
+        /* height: 4.25rem; */
+        /* height: 6.25rem; */
+        margin-bottom: 1rem;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
+            -webkit-box-shadow: 3px 3px 7px 0px rgba(146,146,146,0.65);
+            -moz-box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
+    }
+
+    .article-title {
+        margin: 1.06rem 0 0 0.8rem;
+        font-size: 1.05rem;
+    }
+
+    .description-container {
+        /* border: 1px solid red; */
+        margin: 0.5rem 1.44rem 0.8rem 0.8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article-price {
+        font-weight: 600;
+    }
+
+    .article-description {
+        font-size: 0.88rem;
     }
