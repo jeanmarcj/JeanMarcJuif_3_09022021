@@ -1,6 +1,12 @@
 Cartouches Fonctionnement :
-Tester le code en display flex.
-En position absolute corriger le positionnement des icones et la hauteur en version XSmall.
+
+Lien vers Github pages :
+https://jeanmarcj.github.io/JeanMarcJuif_3_09022021/index.html
+
+Lancer SASS :
+./dart-sass/sass SASS/style.scss css/main.css --watch
+
+
 
 Dans le css -> Faire un import des classes communes à toutes les pages via SCSS.
 
