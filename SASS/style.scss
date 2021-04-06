@@ -267,12 +267,6 @@ a:active {
         cursor: pointer;
     }
 
-/*  --------------------
-    Restaurants template
-    -------------------- */
-
-
-
 /*  ---------
     Footer
     --------- */
@@ -280,12 +274,15 @@ a:active {
         background-color: var(--ohmyfood-footerbg);
     }
     .footer-container {
+        border: 1px solid var(--ohmyfood-footerbg);
         margin: 0 1.25rem;
     }
-    footer img {
-        display: block;
-        width: 6.5rem;
-        padding: 1.5rem 0 1rem 0;
+    .logo {
+        font-family: "Shrikhand", sans-serif;
+        color: white;
+        font-size: 1.15rem;
+        font-weight: 100;
+        margin: 1.5rem 0 1rem 0;
     }
     .footer-container a {
         display: block;
