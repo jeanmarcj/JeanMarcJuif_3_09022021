@@ -12,6 +12,9 @@ Dans le css -> Faire un import des classes communes à toutes les pages via SCSS
 Factoriser les classes CSS pour éviter les répétissions (idem classe btn)
 comme dans le menu, le footer etc.
 
+#1 Dans le footer, ne pas utiliser d'image, juste un texte avec la police.
+#2 Propriété CSS: text ellipsis.
+
 Question mentor :
 1) Code de l'espacement entre l'icone et le texte dans le footer.
 2) La photo dans les menus est en image backround.
