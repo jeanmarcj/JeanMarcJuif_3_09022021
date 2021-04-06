@@ -18,3 +18,29 @@ comme dans le menu, le footer etc.
 Question mentor :
 1) Code de l'espacement entre l'icone et le texte dans le footer.
 2) La photo dans les menus est en image backround.
+
+SNIPPET :
+
+Pour le coeur :
+html
+<section>
+  <h2 >Exemple dégradé</h2>
+    <div><i class="fa fa-heart"></i></div>
+ </section>
+
+ css
+section div {
+  border: 3px dashed red;
+}
+.fa {
+  font-size: 128px;
+  color: #ffabc1;
+  display: block;
+  background: -webkit-linear-gradient(#ffabc1, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 3px solid red;
+}
+
+
+
