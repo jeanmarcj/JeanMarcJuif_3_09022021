@@ -137,3 +137,28 @@ p {
         padding: 0 3.06rem;
     }
     
+/*  -----------
+    animations
+    ----------- */
+
+    .fade-in {
+        animation: fadein 5s;
+        -moz-animation: fadein 5s;
+        -webkit-animation: fadein 5s;
+    }
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadein { /* Safari & Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
