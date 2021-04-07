@@ -22,6 +22,7 @@ p {
         font-weight: 300;
         font-size: 0.9rem;
         text-transform: uppercase;
+        opacity: 0;
     }
     .divider {
         width: 2.2rem;
@@ -29,6 +30,7 @@ p {
         border: 0;
         margin: 0.3rem 0 0.82rem 0;
         background: var(--ohmyfood-tertiaire);
+        opacity: 0;
     }
 
 /*  --------
@@ -106,6 +108,8 @@ p {
         box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
             -webkit-box-shadow: 3px 3px 7px 0px rgba(146,146,146,0.65);
             -moz-box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
+        opacity: 0;
+        
     }
 
     .article-title {
@@ -126,6 +130,8 @@ p {
 
     .article-description {
         font-size: 0.88rem;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     .menu-order {
@@ -141,10 +147,20 @@ p {
     animations
     ----------- */
 
-    .fade-in {
-        animation: fadein 5s;
-        -moz-animation: fadein 5s;
-        -webkit-animation: fadein 5s;
+    .fade-in-5 {
+        animation: fadein 1.2s ease-in 0.5s forwards;
+            -moz-animation: fadein 1.2s ease-in 0.5s forwards;
+            -webkit-animation: fadein 1.2s ease-in 0.5s forwards;
+    }
+    .fade-in-10 {
+        animation: fadein 1.2s ease-in 1s forwards;
+            -moz-animation: fadein 1.2s ease-in 1s forwards;
+            -webkit-animation: fadein 1.2s ease-in 1s forwards;
+    }
+    .fade-in-15 {
+        animation: fadein 1.2s ease-in 1.5s forwards;
+            -moz-animation: fadein 1.2s ease-in 1.5s forwards;
+            -webkit-animation: fadein 1.2s ease-in 1.5s forwards;
     }
     @keyframes fadein {
         from {
