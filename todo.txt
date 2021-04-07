@@ -16,14 +16,20 @@ Compatible Chrome et Firefox.
 
 Effets graphiques et animations :
 Boutons
-Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
+Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+L’ombre portée devra également être plus visible.
 Au survol sur desktop, le bouton « j’aime » en forme de coeur devra remplir progressivement.
 
 Page d’accueil
-Au chargement de la page, aperçu d’un « loading spinner » pendant 3 secondes. Il doit couvrir l’intégralité de l’écran (en css uniquement, pas de librairie). Loader au choix, pas de design défini pour ce composant. Il doit être cohérent avec la charte graphique du site.
+Au chargement de la page, aperçu d’un « loading spinner » pendant 3 secondes.
+Il doit couvrir l’intégralité de l’écran (en css uniquement, pas de librairie).
+Loader au choix, pas de design défini pour ce composant.
+Il doit être cohérent avec la charte graphique du site.
 
 Page de menu
-A l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe « Entrée », « Plat » et « Dessert ». Voir exemple fourni.
+A l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps.
+Ils pourront soit apparaître un par un, soit par groupe « Entrée », « Plat » et « Dessert ».
+Voir exemple fourni.
 
 Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.
 Cela fait apparaître une petite coche à droite du plat.
