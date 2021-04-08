@@ -522,6 +522,13 @@ nav img {
   left: -15px;
 }
 
+.operation-card:hover {
+  background-color: #dddddd;
+}
+.operation-card:hover > i {
+  color: var(--ohmyfood-primaire);
+}
+
 .operation-card i {
   position: absolute;
   left: 38px;

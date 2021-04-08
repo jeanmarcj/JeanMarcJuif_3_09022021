@@ -192,6 +192,13 @@ a:active {
         position: absolute;
         left: -15px;
     }
+    $lightgray: #f6f6f6;
+    .operation-card:hover {
+        background-color: darken($lightgray, 10);
+        &>i {
+            color: var(--ohmyfood-primaire);
+        }
+    }
     .operation-card i {
         position: absolute;
         left: 38px;
