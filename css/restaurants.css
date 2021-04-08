@@ -149,7 +149,7 @@ p {
 /*  -----------
     animations
     ----------- */
-
+    /* Fade-in for each article in the menu */
     .fade-in-5 {
         animation: fadein 1.2s ease-in 0.5s forwards;
             -moz-animation: fadein 1.2s ease-in 0.5s forwards;
@@ -169,6 +169,31 @@ p {
         animation: fadein 1.2s ease-in 2s forwards;
             -moz-animation: fadein 1.2s ease-in 2s forwards;
             -webkit-animation: fadein 1.2s ease-in 2s forwards;
+    }
+    .fade-in-25 {
+        animation: fadein 1.2s ease-in 2.5s forwards;
+            -moz-animation: fadein 1.2s ease-in 2.5s forwards;
+            -webkit-animation: fadein 1.2s ease-in 2.5s forwards;
+    }
+    .fade-in-30 {
+        animation: fadein 1.2s ease-in 3s forwards;
+            -moz-animation: fadein 1.2s ease-in 3s forwards;
+            -webkit-animation: fadein 1.2s ease-in 3s forwards;
+    }
+    .fade-in-35 {
+        animation: fadein 1.2s ease-in 3.5s forwards;
+            -moz-animation: fadein 1.2s ease-in 3.5s forwards;
+            -webkit-animation: fadein 1.2s ease-in 3.5s forwards;
+    }
+    .fade-in-40 {
+        animation: fadein 1.2s ease-in 4s forwards;
+            -moz-animation: fadein 1.2s ease-in 4s forwards;
+            -webkit-animation: fadein 1.2s ease-in 4s forwards;
+    }
+    .fade-in-45 {
+        animation: fadein 1.2s ease-in 4.5s forwards;
+            -moz-animation: fadein 1.2s ease-in 4.5s forwards;
+            -webkit-animation: fadein 1.2s ease-in 4.5s forwards;
     }
     @keyframes fadein {
         from {
