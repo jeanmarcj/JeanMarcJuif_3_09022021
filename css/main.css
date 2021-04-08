@@ -524,6 +524,7 @@ nav img {
 
 .operation-card:hover {
   background-color: #dddddd;
+  transition: background-color ease-in-out 250ms;
 }
 .operation-card:hover > i {
   color: var(--ohmyfood-primaire);

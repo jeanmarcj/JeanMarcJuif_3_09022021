@@ -195,6 +195,7 @@ a:active {
     $lightgray: #f6f6f6;
     .operation-card:hover {
         background-color: darken($lightgray, 10);
+        transition: background-color ease-in-out 250ms;
         &>i {
             color: var(--ohmyfood-primaire);
         }
