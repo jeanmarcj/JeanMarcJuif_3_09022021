@@ -55,6 +55,7 @@ p {
         height: 16.56rem;
         background-image: url(../img/restaurants/palette_du_gout.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
 /*  -----------
@@ -63,7 +64,7 @@ p {
     .menu-container {
         /* Conserver une bordure ! */
         border: 1px solid var(--ohmyfood-lightgray);
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: -3.5rem auto 0 auto;
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
@@ -78,6 +79,7 @@ p {
     .menu-header h1 {
         /* border: 1px solid blue; */
         font-family: "Shrikhand", sans-serif;
+        font-weight: 100;
         /* font-weight: lighter; */
         font-size: 1.4rem;
         letter-spacing: 0.05rem;
@@ -147,21 +149,64 @@ p {
     .btn-primary {
         padding: 0 3.06rem;
     }
-/*  ======================
-    Mobile M >375px
-    ====================== */
-    @media only screen and (min-width: 375px) {
 
-        /* menu */
-        article {
-            max-width: 20rem;
+/*  ======================
+    Responsive design
+    ====================== */
+
+    /*  ======================
+        Mobile M >375px
+        ====================== */
+        @media only screen and (min-width: 375px) {
+
+            /* menu */
+            article {
+                max-width: 20rem;
+            }
         }
 
-    }
-
-
-
-
+    /*  ======================
+        Tablet >768px
+        ====================== */
+        @media only screen and (min-width: 768px) {
+            .menu-header h1 {
+                font-size: 1.9rem;
+                letter-spacing: 0.1rem;
+            }
+            .menu-title {
+                font-size: 1.45rem;
+            }
+            .divider {
+                width: 3.5rem;
+            }
+            article {
+                max-width: 30rem;
+            }
+            .article-title {
+                font-size: 1.15rem;
+            }
+            .article-description {
+                font-size: 1.1rem;
+                width: 20rem;
+            }
+            .article-price {
+                font-size: 1.1rem;
+            }
+            .btn-primary {
+                width: 15rem;
+            }
+        }
+    /*  ======================
+        Desktop >1024px
+        ====================== */
+        @media only screen and (min-width: 1024px) {
+            .menu-container {
+                width: 90%;
+            }
+            .menu-header {
+                justify-content: space-evenly;
+            }
+        }
 
 
 
