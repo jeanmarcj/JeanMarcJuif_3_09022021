@@ -94,15 +94,17 @@ p {
     margin: 2.5rem 1rem;
     }
     
-    section {
+    .menu-starter,
+    .menu-main-dish,
+    .menu-desert,
+    .menu-order {
         margin-bottom: 2.06rem;
     }
 
     article {
         border: 1px solid white;
-        /* height: 4.25rem; */
-        /* height: 6.25rem; */
         margin-bottom: 1rem;
+        margin: 0 auto 1rem auto;
         background-color: white;
         border-radius: 20px;
         box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
@@ -145,7 +147,25 @@ p {
     .btn-primary {
         padding: 0 3.06rem;
     }
-    
+/*  ======================
+    Mobile M >375px
+    ====================== */
+    @media only screen and (min-width: 375px) {
+
+        /* menu */
+        article {
+            max-width: 20rem;
+        }
+
+    }
+
+
+
+
+
+
+
+
 /*  -----------
     animations
     ----------- */
