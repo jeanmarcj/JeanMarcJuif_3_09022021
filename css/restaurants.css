@@ -132,6 +132,9 @@ p {
         font-size: 0.88rem;
         overflow: hidden;
         white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 16rem;
+        /* Important de donnner une largeur pour 'ellipsis' */
     }
 
     .menu-order {
@@ -161,6 +164,11 @@ p {
         animation: fadein 1.2s ease-in 1.5s forwards;
             -moz-animation: fadein 1.2s ease-in 1.5s forwards;
             -webkit-animation: fadein 1.2s ease-in 1.5s forwards;
+    }
+    .fade-in-20 {
+        animation: fadein 1.2s ease-in 2s forwards;
+            -moz-animation: fadein 1.2s ease-in 2s forwards;
+            -webkit-animation: fadein 1.2s ease-in 2s forwards;
     }
     @keyframes fadein {
         from {

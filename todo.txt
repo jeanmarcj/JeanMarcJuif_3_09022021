@@ -127,6 +127,9 @@ Popout menu : https://www.30secondsofcode.org/css/s/popout-menu
 
 Truncate text multiline : https://www.30secondsofcode.org/css/s/truncate-text-multiline
 
+Truncate text : https://www.30secondsofcode.org/css/s/truncate-text
+
+
 
 
 
