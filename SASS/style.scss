@@ -92,20 +92,31 @@ a:active {
         margin-bottom: 1.88rem;
     }
 
+    $border-rad: 40px;
     .btn {
         cursor: pointer;
         padding: 0 1.31rem;
         height: 3.06rem;
         color: white;
         border: 0px solid white;
-        border-radius: 40px;
+        border-radius: $border-rad;
         box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
             -webkit-box-shadow: 3px 3px 12px 0px rgba(177,107,107,0.36);
             -moz-box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
-        background: -moz-linear-gradient(top,  rgba(255,163,229,0.91) 0%, rgba(252,155,227,0.91) 8%, rgba(235,115,218,0.95) 47%, rgba(161,91,219,1) 93%);
-        background: -webkit-linear-gradient(top,  rgba(255,163,229,0.91) 0%,rgba(252,155,227,0.91) 8%,rgba(235,115,218,0.95) 47%,rgba(161,91,219,1) 93%);
+        background-color: -moz-linear-gradient(top,  rgba(255,163,229,0.91) 0%, rgba(252,155,227,0.91) 8%, rgba(235,115,218,0.95) 47%, rgba(161,91,219,1) 93%);
         background: linear-gradient(to bottom,  rgba(255,163,229,0.91) 0%,rgba(252,155,227,0.91) 8%,rgba(235,115,218,0.95) 47%,rgba(161,91,219,1) 93%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ffa3e5', endColorstr='#a15bdb',GradientType=0 );
+        transition: box-shadow 250ms;
+        &:hover {
+            background: rgb(255,186,234);
+            background: -moz-linear-gradient(top,  rgba(255,186,234,1) 0%, rgba(249,184,232,1) 8%, rgba(234,145,221,1) 46%, rgba(172,121,216,1) 93%);
+            background: -webkit-linear-gradient(top,  rgba(255,186,234,1) 0%,rgba(249,184,232,1) 8%,rgba(234,145,221,1) 46%,rgba(172,121,216,1) 93%);
+            background: linear-gradient(to bottom,  rgba(255,186,234,1) 0%,rgba(249,184,232,1) 8%,rgba(234,145,221,1) 46%,rgba(172,121,216,1) 93%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbaea', endColorstr='#ac79d8',GradientType=0 );
+            box-shadow: 3px 3px 12px 0px rgba(68, 68, 68, 0.56);
+                -webkit-box-shadow: 3px 3px 12px 0px rgba(68, 68, 68, 0.56);
+                -moz-box-shadow: 3px 3px 12px 0px rgba(68, 68, 68, 0.56);
+        }
     }
 /*  -------------------
     Section #operation
