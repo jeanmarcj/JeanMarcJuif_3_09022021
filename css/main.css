@@ -612,7 +612,7 @@ nav img {
   background-color: var(--ohmyfood-tertiaire);
   color: #008766;
   position: absolute;
-  left: 190px;
+  right: 14px;
   top: 14px;
 }
 
@@ -639,7 +639,7 @@ article:nth-child(3) .card-footer > h3::first-letter {
   font-size: 1.3rem;
   position: absolute;
   top: 0;
-  left: 221px;
+  right: 0px;
 }
 
 .card-footer i:hover {
@@ -719,15 +719,6 @@ footer {
     width: 21rem;
     max-width: 21rem;
   }
-
-  .card-img span {
-    left: 244px;
-    top: 14px;
-  }
-
-  .card-footer i {
-    left: 275px;
-  }
 }
 /*  ======================
     Tablette >768px
@@ -771,6 +762,61 @@ footer {
   #location {
     width: 20rem;
     margin: 0;
+  }
+
+  #reservation {
+    height: 15rem;
+  }
+
+  #operation {
+    margin: 3.75rem 2rem 0 2rem;
+    height: 15rem;
+  }
+
+  #operation h2 {
+    margin-left: 1.25rem;
+  }
+
+  .operation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .operation-card {
+    margin: 0;
+    max-width: 18.5rem;
+  }
+
+  #restaurants,
+.footer-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #restaurants {
+    padding: 0 0 5.44rem 0;
+  }
+
+  .restaurants-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #restaurants article {
+    margin: 0;
+    width: 14rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container h4,
+.footer-container a {
+    align-self: center;
   }
 }
 
