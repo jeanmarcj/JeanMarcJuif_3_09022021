@@ -818,6 +818,10 @@ footer {
 .footer-container a {
     align-self: center;
   }
+
+  .logo {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
