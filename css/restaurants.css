@@ -188,7 +188,7 @@ p {
             }
             .article-description {
                 font-size: 1.1rem;
-                width: 20rem;
+                width: 21rem;
             }
             .article-price {
                 font-size: 1.1rem;
@@ -204,12 +204,63 @@ p {
             .menu-container {
                 width: 90%;
             }
+            .menu-starter,
+            .menu-main-dish,
+            .menu-desert,
+            .menu-order {
+                margin: 5rem 0;
+            }
             .menu-header {
                 justify-content: space-evenly;
             }
+            .starter-container,
+            .main-dish-container,
+            .desert-container {
+                /* border: 1px solid green; */
+                display: flex;
+                justify-content: space-between;
+            }
+            article {
+                margin: 0;
+                width: 18rem;
+            }
+            .article-title {
+                font-size: 1.05rem;
+            }
+            .article-description {
+                width: 12rem;
+                font-size: 1rem;
+            }
+            .footer-container {
+                margin: 0 auto;
+                width: 90%;
+            }
         }
-
-
+    /*  ======================
+        Desktop >1440px
+        ====================== */
+        @media only screen and (min-width: 1440px) {
+            .menu-container {
+                max-width: 79.19rem;
+            }
+            article {
+                width: 25rem;
+            }
+            .article-title {
+                font-size: 1.15rem;
+            }
+            .article-description {
+                font-size: 1rem;
+                width: 21rem;
+            }
+            .footer-container {
+                width: 88%;
+            }
+            .btn-primary span {
+                font-size: 1.5rem;
+                line-height: 2.1;
+            }
+        }
 
 
 /*  -----------
