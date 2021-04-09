@@ -729,5 +729,49 @@ footer {
     left: 275px;
   }
 }
+/*  ======================
+    Tablette >768px
+    ====================== */
+@media only screen and (min-width: 768px) {
+  #location,
+#reservation {
+    width: 95%;
+  }
+
+  #location {
+    margin: 0 auto 1rem auto;
+    border-radius: 25px;
+  }
+
+  #reservation {
+    margin: 0 auto;
+  }
+
+  #restaurants article {
+    margin-bottom: 2.5rem;
+  }
+}
+/*  ======================
+    Desktop >1024px
+    ====================== */
+@media only screen and (min-width: 1024px) {
+  .logo-container {
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    height: 6.5rem;
+  }
+
+  nav img {
+    margin: 1.375rem 0;
+  }
+
+  #location {
+    width: 20rem;
+    margin: 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
