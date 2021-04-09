@@ -52,6 +52,8 @@ comme dans le menu, le footer etc.
 
 ================================================================
 Questions mentor :
+Logo en-tête : utiliser la police de caractères ?
+Template restaurants : break-point à 1250px ?
 
 
 
