@@ -374,101 +374,171 @@ a:active {
                 max-width: 21rem;
             }
       }
-    /*  ======================
-        Tablette >768px
-        ====================== */
-        @media only screen and (min-width: 768px) {
-            #location,
-            #reservation {
-                width: 95%;
-            }
-            #location {
-                margin: 0 auto 1rem auto;
-                border-radius: 25px;
-            }
-            #reservation {
-                margin: 0 auto;
-            }
-            #restaurants article {
-                margin-bottom: 2.5rem;
-            }
+/*  ======================
+    Tablette >768px
+    ====================== */
+    @media only screen and (min-width: 768px) {
+        #location,
+        #reservation {
+            width: 95%;
         }
-    /*  ======================
-        Desktop >1024px
-        ====================== */
-        @media only screen and (min-width: 1024px) {
-            .logo-container {
-                margin: 0 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                align-content: center;
-                height: 6.5rem;
-            }
-            // nav img {
-            //     margin: 1.375rem 0;
-            // }
-            #location {
-                width: 20rem;
-                margin: 0;
-            }
-            #reservation {
-                height: 15rem;
-            }
-            #operation {
-                margin: 3.75rem 2rem 0 2rem;
-                height: 15rem;
-            }
-            #operation h2 {
-                margin-left: 1.25rem;
-            }
-            .operation-container {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                align-content: center;
-            }
-            .operation-card {
-                margin: 0;
-                max-width: 18.5rem;
-            }
-            #restaurants,
-            .footer-container {
-                width: 95%;
-                margin: 0 auto;
-            }
-            #restaurants {
-                padding: 0 0 5.44rem 0;
-            }
-            .restaurants-container {
-                display: flex;
-                justify-content: space-between;
-            }
-            #restaurants article {
-                margin: 0;
-                width: 14rem;
-            }
-            .footer-container {
-                display: flex;
-                flex-direction: column;
-            }
-            .footer-container h4,
-            .footer-container a {
-                align-self: center;
-            }
-            .logo {
-                font-size: 2rem;
-            }
+        #location {
+            margin: 0 auto 1rem auto;
+            border-radius: 25px;
         }
-    /*  ======================
-        Desktop >1440px
-        ====================== */
-        @media only screen and (min-width: 1440px) {
-            #reservation,
-            #operation,
-            #restaurants {
-                width: 80%;
-                margin-right: auto;
-                margin-left: auto;
-            }
+        #reservation {
+            margin: 0 auto;
         }
+        #restaurants article {
+            margin-bottom: 2.5rem;
+        }
+    }
+/*  ======================
+    Desktop >1024px
+    ====================== */
+    @media only screen and (min-width: 1024px) {
+        .logo-container {
+            margin: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+            height: 6.5rem;
+        }
+        // nav img {
+        //     margin: 1.375rem 0;
+        // }
+        #location {
+            width: 20rem;
+            margin: 0;
+        }
+        #reservation {
+            height: 15rem;
+        }
+        #operation {
+            margin: 3.75rem 2rem 0 2rem;
+            height: 15rem;
+        }
+        #operation h2 {
+            margin-left: 1.25rem;
+        }
+        .operation-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .operation-card {
+            margin: 0;
+            max-width: 18.5rem;
+        }
+        #restaurants,
+        .footer-container {
+            width: 95%;
+            margin: 0 auto;
+        }
+        #restaurants {
+            padding: 0 0 5.44rem 0;
+        }
+        .restaurants-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        #restaurants article {
+            margin: 0;
+            width: 14rem;
+        }
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-container h4,
+        .footer-container a {
+            align-self: center;
+        }
+        .logo {
+            font-size: 2rem;
+        }
+    }
+/*  ======================
+    Desktop >1440px
+    ====================== */
+    @media only screen and (min-width: 1440px) {
+        #reservation,
+        #operation,
+        #restaurants {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+/*  ======================
+    Animation test
+    ====================== */
+    @keyframes start-loading {
+        0% {
+            opacity: 0;
+            background: rgb(134, 133, 133);
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            background: white;
+        }
+    }
+    @keyframes display-off {
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    .start {
+        animation: display-off 8s forwards;
+        position: absolute;
+        // left: 50%;
+        top: 20rem;
+        // vertical-align: middle;
+        // align-self: center;
+        // border: 1px solid red;
+    }
+    .loader-container {
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        z-index: 999;
+        
+    }
+
+/*  ======================
+    Fake loader animation
+    ====================== */
+    @keyframes bouncing-loader {
+        to {
+          opacity: 0.1;
+          transform: translate3d(0, -16px, 0);
+        }
+      }
+      
+      .bouncing-loader {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .bouncing-loader > div {
+        width: 16px;
+        height: 16px;
+        margin: 3rem 0.2rem;
+        background: var(--ohmyfood-primaire);
+        border-radius: 50%;
+        animation: bouncing-loader 0.6s 10 alternate;
+      }
+      
+      .bouncing-loader > div:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      
+      .bouncing-loader > div:nth-child(3) {
+        animation-delay: 0.4s;
+      }

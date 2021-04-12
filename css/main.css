@@ -831,5 +831,70 @@ footer {
     margin-left: auto;
   }
 }
+/*  ======================
+    Animation test
+    ====================== */
+@keyframes start-loading {
+  0% {
+    opacity: 0;
+    background: #868585;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: white;
+  }
+}
+@keyframes display-off {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.start {
+  animation: display-off 8s forwards;
+  position: absolute;
+  top: 20rem;
+}
+
+.loader-container {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+/*  ======================
+    Fake loader animation
+    ====================== */
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncing-loader > div {
+  width: 16px;
+  height: 16px;
+  margin: 3rem 0.2rem;
+  background: var(--ohmyfood-primaire);
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s 10 alternate;
+}
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
 /*# sourceMappingURL=main.css.map */
