@@ -405,9 +405,9 @@ a:active {
                 align-content: center;
                 height: 6.5rem;
             }
-            nav img {
-                margin: 1.375rem 0;
-            }
+            // nav img {
+            //     margin: 1.375rem 0;
+            // }
             #location {
                 width: 20rem;
                 margin: 0;
@@ -459,5 +459,16 @@ a:active {
             .logo {
                 font-size: 2rem;
             }
-
+        }
+    /*  ======================
+        Desktop >1440px
+        ====================== */
+        @media only screen and (min-width: 1440px) {
+            #reservation,
+            #operation,
+            #restaurants {
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
