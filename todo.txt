@@ -1,6 +1,7 @@
 Cartouches Fonctionnement :
 
 Lien vers Github pages :
+Sujet git : Fix (beug), feat (fonctionnalité), impl (implementation), initial
 https://jeanmarcj.github.io/JeanMarcJuif_3_09022021/index.html
 
 Lancer SASS :
