@@ -432,6 +432,9 @@ a:active {
             margin: 0;
             max-width: 18.5rem;
         }
+        .operation-card:nth-child(1) {
+            margin-left: 15px;
+        }
         #restaurants,
         .footer-container {
             width: 95%;
