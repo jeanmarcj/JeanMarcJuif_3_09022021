@@ -849,21 +849,27 @@ footer {
 }
 @keyframes display-off {
   to {
-    opacity: 0;
     visibility: hidden;
   }
 }
 .start {
-  animation: display-off 8s forwards;
+  animation: display-off 5s forwards;
   position: absolute;
   top: 20rem;
 }
 
 .loader-container {
-  position: sticky;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 99vw;
+  height: 100vh;
+  backdrop-filter: blur(1.6rem);
+  background-color: #757575a9;
   display: flex;
   justify-content: center;
   z-index: 999;
+  animation: display-off 5s forwards;
 }
 
 /*  ======================
@@ -871,7 +877,7 @@ footer {
     ====================== */
 @keyframes bouncing-loader {
   to {
-    opacity: 0.1;
+    opacity: 0.5;
     transform: translate3d(0, -16px, 0);
   }
 }
