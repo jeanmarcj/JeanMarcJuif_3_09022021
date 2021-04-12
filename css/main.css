@@ -642,8 +642,26 @@ article:nth-child(3) .card-footer > h3::first-letter {
   right: 0px;
 }
 
-.card-footer i:hover {
-  color: var(--ohmyfood-secondaire);
+.card-footer i.far:hover {
+  opacity: 0;
+}
+
+.card-footer i.fas {
+  opacity: 0;
+}
+
+.card-footer i.fas:hover {
+  opacity: 1;
+}
+
+.card-footer i:hover,
+.card-footer i.fas:focus {
+  background-size: 100%;
+  background-color: var(--ohmyfood-secondaire);
+  background-image: linear-gradient(to bottom, #ffbaea 0%, #f9b8e8 8%, #ea91dd 46%, #ac79d8 93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 

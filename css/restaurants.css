@@ -262,7 +262,6 @@ p {
             }
         }
 
-
 /*  -----------
     animations
     ----------- */
@@ -298,7 +297,7 @@ p {
             -webkit-animation: fadein 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
     }
     
-    /* Animation fadein */
+    /* Animation fadein & translate Y */
     @keyframes fadein {
         0% {
             opacity: 0;
@@ -309,3 +308,6 @@ p {
             transform: translateY(0);
         }
     }
+
+    /* TODO: Animation simple fade */
+
