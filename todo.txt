@@ -172,4 +172,8 @@ Checkbox
   <i class="fas fa-check-circle btn-circle"></i>
 </div>
 
+background-color: #ffe8f8;
+background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 
