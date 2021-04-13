@@ -161,6 +161,12 @@ p {
         @media only screen and (min-width: 375px) {
 
             /* menu */
+            .menu-header {
+                justify-content: center;
+            }
+            .menu-header .far {
+                margin-left: 1rem;
+            }
             article {
                 max-width: 20rem;
             }
@@ -212,12 +218,6 @@ p {
             .menu-desert,
             .menu-order {
                 margin: 5rem 0;
-            }
-            .menu-header {
-                justify-content: center;
-            }
-            .menu-header .far {
-                margin-left: 1rem;
             }
             .starter-container,
             .main-dish-container,
