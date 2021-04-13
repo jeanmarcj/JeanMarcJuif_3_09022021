@@ -56,9 +56,9 @@ Animation des boutons --> OK.
 Animation de l'arrivée progressive des plats des menus --> OK.
 Footer : Passer en horizontal les éléments pour les versions desktop --> OK.
 Page restaurant -> Centrer le coeur et le nom du restaurant --> OK.
-Card Fonctionnement -> Background avec un peu de violet.
 Ralentir l'animation d'apparition des cartouches du menu.
 Restaurant -> Agrandir les cartes du menu en >1250px --> OK.
+Card Fonctionnement -> Background avec un peu de violet.
 Animation du coeur --> En cours.
 Animation de la case à cocher dans la page restaurant --> A faire.
 Passer en tout SCSS.
