@@ -662,6 +662,8 @@ article:nth-child(3) .card-footer > h3::first-letter {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   cursor: pointer;
 }
 
