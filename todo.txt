@@ -47,22 +47,21 @@ Factoriser les classes CSS pour éviter les répétissions (idem classe btn)
 comme dans le menu, le footer etc.
 
 
-
-#1 Dans le footer, ne pas utiliser d'image, juste un texte avec la police.
+#1 Dans le footer, ne pas utiliser d'image, juste un texte avec la police --> OK
 #2 Propriété CSS: text ellipsis --> OK
 
-Responsive design OK pour tout le site.
+Responsive design pour tout le site --> OK
 Animation intro page accueil --> OK.
-Animation du coeur --> En cours.
 Animation des boutons --> OK.
 Animation de l'arrivée progressive des plats des menus --> OK.
-Animation de la case à cocher dans la page restaurant --> A faire.
-Passer en tout SCSS.
-
-Footer -> Passer en horizontal les éléments pour les versions desktop.
+Footer : Passer en horizontal les éléments pour les versions desktop --> OK.
 Page restaurant -> Centrer le coeur et le nom du restaurant.
 Card Fonctionnement -> Background avec un peu de violet.
 Ralentir l'animation d'apparition des cartouches du menu.
+Restaurant -> Agrandir les cartes du menu en >1250px.
+Animation du coeur --> En cours.
+Animation de la case à cocher dans la page restaurant --> A faire.
+Passer en tout SCSS.
 
 
 
