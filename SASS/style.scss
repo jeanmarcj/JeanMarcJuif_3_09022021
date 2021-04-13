@@ -410,6 +410,19 @@ a:active {
         #restaurants article {
             margin-bottom: 2.5rem;
         }
+        .logo {
+            width: 11rem;
+            margin: 1.5rem auto 1rem auto;
+            font-size: 1.7rem;
+        }
+        .footer-container {
+            padding-bottom: 4.5rem;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.15rem;
+        }
     }
 /*  ======================
     Desktop >1024px
@@ -423,9 +436,6 @@ a:active {
             align-content: center;
             height: 6.5rem;
         }
-        // nav img {
-        //     margin: 1.375rem 0;
-        // }
         #location {
             width: 20rem;
             margin: 0;
@@ -455,7 +465,7 @@ a:active {
         }
         #restaurants,
         .footer-container {
-            width: 95%;
+            width: 90%;
             margin: 0 auto;
         }
         #restaurants {
@@ -469,16 +479,11 @@ a:active {
             margin: 0;
             width: 14rem;
         }
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-        }
-        .footer-container h4,
-        .footer-container a {
-            align-self: center;
-        }
         .logo {
             font-size: 2rem;
+        }
+        .footer-links {
+            font-size: 1.3rem;
         }
     }
 /*  ======================
@@ -487,10 +492,15 @@ a:active {
     @media only screen and (min-width: 1440px) {
         #reservation,
         #operation,
-        #restaurants {
+        #restaurants,
+        .footer-container {
             width: 80%;
             margin-right: auto;
             margin-left: auto;
+        }
+        /* Footer */
+        .logo {
+            margin: 1.5rem auto;
         }
     }
 /*  ======================
@@ -535,8 +545,7 @@ a:active {
         display: flex;
         justify-content: center;
         z-index: 999;
-        animation: display-off 5s forwards
-        
+        animation: display-off 5s forwards;
     }
 
 /*  ======================
