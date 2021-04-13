@@ -201,6 +201,9 @@ p {
         Desktop >1024px
         ====================== */
         @media only screen and (min-width: 1024px) {
+            .img-container {
+                background-position: 50% 60%;
+            }
             .menu-container {
                 width: 90%;
             }
@@ -211,12 +214,14 @@ p {
                 margin: 5rem 0;
             }
             .menu-header {
-                justify-content: space-evenly;
+                justify-content: center;
+            }
+            .menu-header .far {
+                margin-left: 1rem;
             }
             .starter-container,
             .main-dish-container,
             .desert-container {
-                /* border: 1px solid green; */
                 display: flex;
                 justify-content: space-between;
             }
