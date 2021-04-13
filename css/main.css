@@ -523,7 +523,8 @@ nav img {
 }
 
 .operation-card:hover {
-  background-color: #dddddd;
+  cursor: pointer;
+  background-color: #ffe8f8;
   transition: background-color ease-in-out 250ms;
 }
 .operation-card:hover > i {

@@ -192,9 +192,11 @@ a:active {
         position: absolute;
         left: -15px;
     }
-    $lightgray: #f6f6f6;
+    
     .operation-card:hover {
-        background-color: darken($lightgray, 10);
+        cursor: pointer;
+        background-color: #ffe8f8;
+
         transition: background-color ease-in-out 250ms;
         &>i {
             color: var(--ohmyfood-primaire);
