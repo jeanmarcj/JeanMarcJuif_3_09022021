@@ -233,10 +233,29 @@ p {
                 font-size: 1.05rem;
             }
             .article-description {
-                width: 12rem;
-                font-size: 1rem;
+                width: 13rem;
+                font-size: 0.68rem;
+                line-height: 1.5;
             }
         }
+    /*  ======================
+        Desktop >1200px
+        ====================== */
+        @media only screen and (min-width: 1200px) {
+            article {
+                width: 21rem;
+            }
+            .article-title {
+                font-size: 1.15rem;
+            }
+            .article-description {
+                width: 17rem;
+                font-size: 0.85rem;
+                line-height: 1;
+            }
+        }
+
+
     /*  ======================
         Desktop >1440px
         ====================== */
@@ -248,7 +267,7 @@ p {
                 width: 25rem;
             }
             .article-title {
-                font-size: 1.15rem;
+                font-size: 1.25rem;
             }
             .article-description {
                 font-size: 1rem;
