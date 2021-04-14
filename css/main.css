@@ -372,7 +372,7 @@ a:active {
 /*  ------
     logo
     ------ */
-nav img {
+.logo-container nav img {
   display: block;
   margin: 1.375rem auto;
   width: 10.125rem;
@@ -897,7 +897,8 @@ footer {
 .start {
   animation: display-off 5s forwards;
   position: absolute;
-  top: 20rem;
+  left: 50%;
+  top: 10%;
 }
 
 .loader-container {
@@ -906,11 +907,13 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  backdrop-filter: blur(1.6rem);
-  background-color: #757575a9;
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  background-color: rgba(146, 146, 146, 0.5);
   display: flex;
   justify-content: center;
   z-index: 999;
+  -webkit-animation: display-off 5s forwards;
   animation: display-off 5s forwards;
 }
 
@@ -919,7 +922,7 @@ footer {
     ====================== */
 @keyframes bouncing-loader {
   to {
-    opacity: 0.5;
+    opacity: 1;
     transform: translate3d(0, -16px, 0);
   }
 }
