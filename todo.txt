@@ -62,8 +62,10 @@ Ralentir l'animation d'apparition des cartouches du menu.
 Animation du coeur --> En cours.
 Animation de la case à cocher dans la page restaurant --> A faire.
 Passer en tout SCSS.
-Créer des sélecteurs HTML avec BAM (voir cours).
+Créer des sélecteurs HTML avec BAM (voir cours). Nommer les sélecteurs avec efficacité.
 Refactoriser le SCSS avec le nesting (imbrication des sélecteurs pour un code plus lisible)
+Refactoriser avec les variables SASS.
+
 
 
 
