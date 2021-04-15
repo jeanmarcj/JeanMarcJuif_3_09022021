@@ -1,4 +1,10 @@
-@import "Vendors/normalize.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./vendors/normalize";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./pages/restaurants.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
