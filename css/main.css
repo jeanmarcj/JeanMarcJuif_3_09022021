@@ -945,6 +945,7 @@ a:active {
 
 #restaurants article:hover {
   background-color: var(--ohmyfood-tertiaire);
+  transition: 1.2s ease-in-out;
 }
 
 #restaurants article a {
@@ -986,6 +987,10 @@ a:active {
 .card-footer {
   margin: 1.25rem 0.9rem 0 1rem;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .card-footer h3,
@@ -993,7 +998,7 @@ a:active {
   margin: 0;
 }
 
-article:nth-child(3) .card-footer > h3::first-letter {
+article:nth-child(3) .__card-footer-title > h3::first-letter {
   text-transform: uppercase;
 }
 
@@ -1001,37 +1006,40 @@ article:nth-child(3) .card-footer > h3::first-letter {
   margin-top: 0.3rem;
 }
 
-.card-footer i {
-  color: black;
-  font-size: 1.3rem;
+.__card-footer-like {
+  position: relative;
+  margin-top: 4px;
+}
+.__card-footer-like i {
+  color: #9d9d9d;
+  font-size: 24px;
+  left: 50%;
+}
+.__card-footer-like .hover-icon {
   position: absolute;
-  top: 0;
-  right: 0px;
-}
-
-.card-footer i.far:hover {
+  left: 0;
   opacity: 0;
 }
-
-.card-footer i.fas {
-  opacity: 0;
-}
-
-.card-footer i.fas:hover {
+.__card-footer-like .hover-icon:hover {
   opacity: 1;
-}
-
-.card-footer i:hover,
-.card-footer i.fas:focus {
-  background-size: 100%;
-  background-color: var(--ohmyfood-secondaire);
-  background-image: linear-gradient(to bottom, #ffbaea 0%, #f9b8e8 8%, #ea91dd 46%, #ac79d8 93%);
+  z-index: 999;
+  background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  transition: 0.7s 0s ease;
+}
+.__card-footer-like:hover, .__card-footer-like:focus, .__card-footer-like:active {
   cursor: pointer;
+  overflow: hidden;
+  opacity: 1;
+  transition: 0.5s 0s ease;
+}
+.__card-footer-like .default-icon:hover {
+  opacity: 0;
+  transition: 0.5s 0s ease;
 }
 
 /*  ---------
@@ -1209,7 +1217,11 @@ footer {
 
   #restaurants article {
     margin: 0;
-    width: 14rem;
+    width: 13rem;
+  }
+
+  .card-footer {
+    margin: 1.25rem 0.2rem 0 0.2rem;
   }
 
   .logo {
@@ -1218,6 +1230,18 @@ footer {
 
   .footer-links {
     font-size: 1.3rem;
+  }
+}
+/*  ======================
+    Desktop >1200px
+    ====================== */
+@media only screen and (min-width: 1200px) {
+  #restaurants article {
+    width: 15rem;
+  }
+
+  .card-footer {
+    margin: 1.25rem 0.9rem 0 1rem;
   }
 }
 /*  ======================
