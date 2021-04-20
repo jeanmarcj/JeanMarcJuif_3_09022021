@@ -65,6 +65,8 @@ Fin de la formation OC Simplifiez-vous le CSS avec Sass --> OK.
 Création de la structure de fichiers SASS 7-1 --> OK.
 
 20/04/2021
+Animation loader à travailler pour qu'elle soit plus lisible et percutante.
+Animation plus percutante.
 Animation de la case à cocher dans la page restaurant --> A faire.
 Passer en tout SCSS --> En cours (structure OK avec import des fichiers)
 Créer des sélecteurs HTML avec BAM (voir cours)
@@ -74,6 +76,7 @@ Refactoriser avec les variables SASS.
 Gestion des breakpoints avec SASS.
 Découpage de la structure des pages HTML.
 Vérification du code W3C
+
 
 
 
