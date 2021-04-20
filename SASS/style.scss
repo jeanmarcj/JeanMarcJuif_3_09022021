@@ -567,25 +567,6 @@ a:active {
 /*  ======================
     Loader Animation
     ====================== */
-    @keyframes start-loading {
-        0% {
-            opacity: 0;
-            background: rgb(134, 133, 133);
-        }
-        75% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-            background: white;
-        }
-    }
-    @keyframes display-off {
-        to {
-            //opacity: 0;
-            visibility: hidden;
-        }
-    }
     .start {
         animation: display-off 5s forwards;
         position: absolute;
@@ -611,23 +592,17 @@ a:active {
                 animation: display-off 5s forwards;
     }
 
-/*  ======================
-    Fake loader animation
-    ====================== */
-    @keyframes bouncing-loader {
-        to {
-          opacity: 1;
-          transform: translate3d(0, -16px, 0);
-        }
-    }
+/*  ========================
+    Bouncing balls animation
+    ======================== */
     .bouncing-loader {
         display: flex;
         justify-content: center;
     }
     .bouncing-loader > div {
-        width: 16px;
-        height: 16px;
-        margin: 3rem 0.2rem;
+        width: 32px;
+        height: 32px;
+        margin: 3rem 0.8rem;
         background: $primary-color;
         border-radius: 50%;
         animation: bouncing-loader 0.6s 10 alternate;
