@@ -937,7 +937,7 @@ a:active {
 #location {
   width: 100vw;
   height: 3.06rem;
-  background-color: var(--ohmyfood-mediumgray);
+  background-color: #eaeaea;
   box-shadow: 1px 3px 3px 0px rgba(213, 213, 213, 0.75) inset;
   -webkit-box-shadow: 1px 3px 3px 0px rgba(213, 213, 213, 0.75) inset;
   -moz-box-shadow: 1px 3px 3px 0px rgba(213, 213, 213, 0.75) inset;
@@ -949,15 +949,12 @@ a:active {
   color: #353535;
   font-size: 0.95rem;
   padding-top: 1rem;
+  font-weight: 500;
 }
 
 #location i {
   padding-right: 1rem;
   margin-left: -1.8rem;
-}
-
-#location span {
-  font-weight: 500;
 }
 
 /*  -------------------
@@ -1000,7 +997,7 @@ a:active {
   cursor: pointer;
   line-height: 3;
   box-shadow: 3px 3px 12px 0px rgba(107, 107, 107, 0.36);
-  -webkit-box-shadow: 3px 3px 12px 0px rgba(177, 107, 107, 0.36);
+  -webkit-box-shadow: 3px 3px 12px 0px rgba(107, 107, 107, 0.36);
   -moz-box-shadow: 3px 3px 12px 0px rgba(107, 107, 107, 0.36);
   background: linear-gradient(to bottom, rgba(255, 163, 229, 0.91) 0%, rgba(252, 155, 227, 0.91) 8%, rgba(235, 115, 218, 0.95) 47%, #a15bdb 93%);
   transition: box-shadow 500ms, background 1000ms;
@@ -1046,7 +1043,7 @@ a:active {
 }
 
 .operation-card {
-  border: 1px solid var(--ohmyfood-mediumgray);
+  border: 1px solid #eaeaea;
   width: 91%;
   max-width: 20.5rem;
   height: 4.625rem;
@@ -1199,7 +1196,7 @@ article:nth-child(3) .__card-footer-title > h3::first-letter {
   margin-top: 4px;
 }
 .__card-footer-like i {
-  color: #9d9d9d;
+  color: #7e7e7e;
   font-size: 24px;
   left: 50%;
 }
@@ -1211,7 +1208,7 @@ article:nth-child(3) .__card-footer-title > h3::first-letter {
 .__card-footer-like .hover-icon:hover {
   opacity: 1;
   z-index: 999;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1385,7 +1382,7 @@ footer {
   }
 
   .operation-card:nth-child(1) {
-    margin-left: 15px;
+    margin-left: 0.94rem;
   }
 
   #restaurants,
@@ -1451,7 +1448,7 @@ footer {
   }
 }
 /*  ======================
-    Animation test
+    Loader Animation
     ====================== */
 @keyframes start-loading {
   0% {
@@ -1475,7 +1472,7 @@ footer {
   animation: display-off 5s forwards;
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 20%;
 }
 
 .loader-container {

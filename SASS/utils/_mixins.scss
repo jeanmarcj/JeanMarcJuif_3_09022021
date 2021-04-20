@@ -1,1 +1,30 @@
 // Déclaration des mixins
+@mixin location-shadow {
+    box-shadow: 1px 3px 3px 0px rgba(213,213,213,0.75) inset;
+    -webkit-box-shadow: 1px 3px 3px 0px rgba(213,213,213,0.75) inset;
+    -moz-box-shadow: 1px 3px 3px 0px rgba(213,213,213,0.75) inset;
+}
+
+@mixin btn-shadow-light {
+    box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(107,107,107,0.36);
+}
+
+@mixin btn-shadow-dark {
+    box-shadow: 3px 3px 12px 0px rgba(68, 68, 68, 0.56);
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(68, 68, 68, 0.56);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(68, 68, 68, 0.56);
+}
+
+@mixin operation-shadow {
+    box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+    -webkit-box-shadow: 5px 3px 14px 0px rgba(146,146,146,0.65);
+    -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+}
+
+@mixin primary-shadow {
+    box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+    -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+    -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+}
