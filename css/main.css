@@ -339,6 +339,63 @@ template {
   display: none;
 }
 
+/* Validation animation icone */
+@keyframes validebtn {
+  0% {
+    transform: rotade(-90deg);
+  }
+  20% {
+    transform: rotade(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotade(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotade(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+/* checkbox animation */
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+/* checkbox animation */
+@keyframes checkbox-contain {
+  0% {
+    transform: translate(50px, 0);
+  }
+  40% {
+    transform: translate(25px, 0);
+  }
+  70% {
+    transform: translate(12px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
 :root {
   --ohmyfood-primaire: #9356DC;
   --ohmyfood-secondaire: #FF79DA;
@@ -458,6 +515,91 @@ nav i {
   margin-bottom: 2.06rem;
 }
 
+.article-description, .article-title, .menu__item .menu__card-title .menu__item-description, .menu__item .menu__card-title .menu__item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__item {
+  border: 1px solid white;
+  margin: 0 auto 1rem auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu__item .menu__card-title {
+  border: 1px solid red;
+  width: 80%;
+  padding: 10px;
+}
+.menu__item .menu__card-title .menu__item-title {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.05rem;
+}
+.menu__item .menu__card-title .menu__item-description {
+  font-size: 0.88rem;
+  /* Important de donnner une largeur pour 'ellipsis' */
+  width: 16rem;
+}
+.menu__item .price__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.06rem;
+  font-weight: bold;
+  margin-top: 18px;
+  padding-right: 10px;
+  text-align: right;
+}
+.menu__item .checkbox {
+  display: none;
+  width: 30%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.menu__item .checkbox .btn-circle {
+  font-size: 24px;
+  color: white;
+  transform: rotate(360deg);
+}
+
+.menu__item:hover .price__container {
+  animation: checkbox-contain ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  min-width: 3.125rem;
+}
+
+.menu__item:hover .checkbox {
+  display: block;
+  background-color: #99E2D0;
+  max-width: 3.125rem;
+  overflow: hidden;
+  animation: checkbox ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+.menu__item:hover .btn-circle {
+  position: absolute;
+  left: 27%;
+  top: 35%;
+  background-color: #99E2D0;
+  animation: validbtn ease 0.5s 1;
+}
+
 .menu-item {
   border: 1px solid white;
   margin-bottom: 1rem;
@@ -488,11 +630,8 @@ nav i {
 
 .article-description {
   font-size: 0.88rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 16rem;
   /* Important de donnner une largeur pour 'ellipsis' */
+  width: 16rem;
 }
 
 .menu-order {
@@ -522,6 +661,10 @@ nav i {
   }
 
   .menu-item {
+    max-width: 20rem;
+  }
+
+  .menu__item {
     max-width: 20rem;
   }
 }
@@ -561,6 +704,10 @@ nav i {
 
   .btn-primary {
     width: 15rem;
+  }
+
+  .menu__item {
+    max-width: 30rem;
   }
 }
 /*  ======================
@@ -602,6 +749,10 @@ nav i {
     width: 13rem;
     font-size: 0.68rem;
     line-height: 1.5;
+  }
+
+  .menu__item {
+    max-width: 18rem;
   }
 }
 /*  ======================
@@ -704,6 +855,63 @@ nav i {
   }
 }
 /* TODO: Animation simple fade */
+/* Validation animation icone */
+@keyframes validebtn {
+  0% {
+    transform: rotade(-90deg);
+  }
+  20% {
+    transform: rotade(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotade(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotade(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+/* checkbox animation */
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+/* checkbox animation */
+@keyframes checkbox-contain {
+  0% {
+    transform: translate(50px, 0);
+  }
+  40% {
+    transform: translate(25px, 0);
+  }
+  70% {
+    transform: translate(12px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
 :root {
   --ohmyfood-primaire: #9356DC;
   --ohmyfood-secondaire: #FF79DA;
