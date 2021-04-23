@@ -1,0 +1,104 @@
+// components/_restaurants-card.scss
+
+/*  -------------------
+    restaurants section
+    ------------------- */
+
+    .restaurants__card-body {
+        .card-img {
+        // border: 1px solid red;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 10.875rem;
+        position: relative;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: $restaurant-rad;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px; 
+            }
+
+            .card-img__new {
+                display: block;
+                width: 4.94rem;
+                height: 1.81rem;
+                font-size: 0.625rem;
+                font-weight: 600;
+                text-align: center;
+                line-height: 1.7rem;
+                background-color: $third-color;
+                color: $new-text;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+            }
+        }
+
+        .card-footer {
+            margin: 1.25rem 0.9rem 0 1rem;
+            position: relative;
+            //Rajout JM
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .card-footer-title > h3::first-letter,
+            .card-footer-title > p::first-letter {
+                text-transform: uppercase;
+            }
+
+            .card-footer-title p {
+                margin-top: 0.3rem;
+            }
+
+            .card-footer-like {
+                position: relative;
+
+                i {
+                    color: $darkgray-color;
+                    font-size: 1.5rem;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    cursor: pointer;
+                    overflow: hidden;
+                    opacity: 1;
+                    transition: 0.5s 0s ease;
+                }
+            }
+        }
+    }
+
+/*  ---------------------
+    Heart icon transition
+    ------------------- */
+
+    .fa-heart.hover-icon {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+            z-index: 999;
+            background: linear-gradient($secondary-color, $primary-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            transition: 0.7s 0s ease;
+        }
+    }
+
+    .fa-heart.default-icon:hover {
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.5s 0s ease;
+    }

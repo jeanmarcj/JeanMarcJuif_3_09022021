@@ -5,14 +5,13 @@
 @import "./components/buttons";
 @import "./components/location";
 @import "./components/operation-card";
+@import "./components/restaurants-card";
+@import "./layouts/keyframes";
 @import "./layouts/header";
 @import "./layouts/nav";
-@import "./pages/restaurants";
-@import "./pages/home";
-@import "./layouts/keyframes";
 @import "./layouts/logoContainer";
-@import "./layouts/header";
-@import "./layouts/nav.scss";
+@import "./pages/home";
+@import "./pages/restaurants";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
@@ -22,164 +21,6 @@
 /*  -------------------
     #restaurants
     ------------------- */
-    #restaurants {
-        // border: 1px solid red;
-        background-color: $lightgray-color;
-        padding-bottom: 4rem;
-
-    }
-    .container {
-        // border: 1px solid green;
-        margin: 0 1.25rem;
-    }
-    #restaurants h2 {
-        margin: 0;
-        padding-top: 3.69rem;
-        margin-bottom: 1.75rem;
-    }
-
-    #restaurants article {
-        // border: 1px solid black;
-        margin: 0 auto 1.125rem auto;
-        height: 15.75rem;
-        width: 17rem;
-        // border-radius: 15px;
-        border-radius: $restaurant-rad;
-        @include primary-shadow;
-    }
-    #restaurants article:hover {
-        background-color: $third-color;
-        transition: 1.2s ease-in-out;
-    }
-    #restaurants article a {
-        text-decoration: none;
-    }
-    .card-img {
-        // border: 1px solid red;
-        border-radius: 15px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        height: 10.875rem;
-        position: relative;
-    }
-    .card-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    .card-img span {
-        // border: 1px solid forestgreen;
-        display: block;
-        width: 4.94rem;
-        height: 1.81rem;
-        font-size: 0.625rem;
-        font-weight: 600;
-        text-align: center;
-        line-height: 1.7rem;
-        background-color: $third-color;
-        color: $new-text;
-        position: absolute;
-        right: 14px;
-        top: 14px;
-    }
-    .card-footer {
-        // border: 1px solid blue;
-        margin: 1.25rem 0.9rem 0 1rem;
-        position: relative;
-        //Rajout JM
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    .card-footer h3,
-    .card-footer p {
-        margin: 0;
-    }
-    article:nth-child(3) .__card-footer-title > h3::first-letter {
-        text-transform: uppercase;
-    }
-    .card-footer p {
-        margin-top: 0.3rem;
-    }
-    // .card-footer i {
-    //     color: var(--ohmyfood-darkgray);
-    //     font-size: 1.3rem;
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0px;
-    // }
-    // .card-footer i.far:hover {
-    //     opacity: 0;
-    // }
-    // .card-footer i.fas {
-    //     opacity: 0;
-    // }
-    // .card-footer i.fas:hover {
-    //     opacity: 1;
-    //     background-color: white;
-    // }
-    // .card-footer i:hover,
-    // .card-footer i.fas:focus {
-    //     // color: var(--ohmyfood-secondaire);
-    //     background-size: 100%;
-    //     background-color: var(--ohmyfood-secondaire);
-    //     background-image: linear-gradient(to bottom,  rgba(255,186,234,1) 0%,rgba(249,184,232,1) 8%,rgba(234,145,221,1) 46%,rgba(172,121,216,1) 93%);
-    //     background-clip: text;
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    //     -moz-background-clip: text;
-    //     -moz-text-fill-color: transparent;
-    //     cursor: pointer;
-    //     transition-property: background-color;
-    //     transition-duration: 0.6s;
-    // }
-
-    .__card-footer-like {
-        position: relative;
-        // margin-right: 22px;
-        margin-top: 4px;
-        //Rajout JM
-        // border: 1px solid green;
-
-        i {
-            color: $darkgray-color;
-            font-size: 24px;
-            left: 50%;
-        }
-        .hover-icon {
-            position: absolute;
-            left: 0;
-            opacity: 0;
-            &:hover {
-                opacity: 1;
-                z-index: 999;
-                background: linear-gradient($secondary-color, $primary-color);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                transition: 0.7s 0s ease;
-            }
-        }
-        &:hover,
-        &:focus,
-        &:active {
-            cursor: pointer;
-            overflow: hidden;
-            opacity: 1;
-            transition: 0.5s 0s ease;
-        }
-        .default-icon:hover {
-            opacity: 0;
-            transition: 0.5s 0s ease;
-        }
-    }
-
     
 /*  ---------
     Footer

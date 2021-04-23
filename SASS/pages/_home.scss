@@ -40,3 +40,69 @@
     // .operation-container {
     //     margin-top: 2.125rem;
     // }
+
+    /*  -------------------
+    Main .restaurants
+    ------------------- */
+    .restaurants {
+        // border: 1px solid red;
+        background-color: $lightgray-color;
+        padding-bottom: 4rem;
+
+        .container {
+            margin: 0 1.25rem;
+        }
+
+        &__heading {
+            margin: 0;
+            padding-top: 3.69rem;
+            margin-bottom: 1.75rem;
+        }
+
+        //Article
+        .restaurants__card {
+            margin: 0 auto 1.125rem auto;
+            height: 15.75rem;
+            width: 17rem;
+            border-radius: $restaurant-rad;
+            @include primary-shadow;
+
+            &:hover {
+                background-color: $third-color;
+                transition: 1.2s ease-in-out;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    // .container {
+    //     // border: 1px solid green;
+    //     margin: 0 1.25rem;
+    // }
+
+    // #restaurants h2 {
+    //     margin: 0;
+    //     padding-top: 3.69rem;
+    //     margin-bottom: 1.75rem;
+    // }
+
+    // #restaurants article {
+    //     // border: 1px solid black;
+    //     margin: 0 auto 1.125rem auto;
+    //     height: 15.75rem;
+    //     width: 17rem;
+    //     // border-radius: 15px;
+    //     border-radius: $restaurant-rad;
+    //     @include primary-shadow;
+    // }
+    // #restaurants article:hover {
+    //     background-color: $third-color;
+    //     transition: 1.2s ease-in-out;
+    // }
+    // #restaurants article a {
+    //     text-decoration: none;
+    // }
