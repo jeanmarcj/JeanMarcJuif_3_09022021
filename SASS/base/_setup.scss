@@ -1,0 +1,21 @@
+// Main setup for this project
+
+body {
+    font-family: $text-font;
+    background: white;
+    color: black;
+    font-size: $font-size;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:active {
+    color:black;
+}
