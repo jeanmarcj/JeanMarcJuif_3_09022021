@@ -7,6 +7,19 @@ https://jeanmarcj.github.io/JeanMarcJuif_3_09022021/index.html
 Lancer SASS :
 ./dart-sass/sass SASS/style.scss css/main.css --watch
 
+Ordre d'importation des fichiers SASS :
+1. Utils :
+    1. Variables.
+    2. Fonctions.
+    3. Mixins.
+    4. Placeholders.
+2. Feuilles de style de tiers (vendors) (si vous en avez).
+3. Base.
+4. Composants.
+5. Layout.
+6. Pages.
+7. Thèmes.
+
 ================================================================
 Brief
 
