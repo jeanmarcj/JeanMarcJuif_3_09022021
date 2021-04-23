@@ -78,6 +78,12 @@ Découpage de la structure des pages HTML.
 Créer les pages restaurants
 Vérification du code W3C
 
+Priorités session de mentorat du 20/04
+Terminer l'animation du bouton check-box.
+Améliorer l'animation du loader.
+Améliorer la refonte du code source SCSS.
+Reproduire les autres pages de menu.
+
 
 
 
