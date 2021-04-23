@@ -66,15 +66,16 @@ Création de la structure de fichiers SASS 7-1 --> OK.
 
 20/04/2021
 Animation loader à travailler pour qu'elle soit plus lisible et percutante.
-Animation plus percutante.
+Animation plus percutante --> Animation corrigée.
 Animation de la case à cocher dans la page restaurant --> A faire.
 Passer en tout SCSS --> En cours (structure OK avec import des fichiers)
 Créer des sélecteurs HTML avec BAM (voir cours)
 Nommer les sélecteurs avec efficacité (Voir PDF)
 Refactoriser le SCSS avec le nesting (imbrication des sélecteurs pour un code plus lisible)
-Refactoriser avec les variables SASS.
+Refactoriser avec les variables SASS --> Variables OK.
 Gestion des breakpoints avec SASS.
 Découpage de la structure des pages HTML.
+Créer les pages restaurants
 Vérification du code W3C
 
 
