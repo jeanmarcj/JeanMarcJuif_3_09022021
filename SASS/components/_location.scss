@@ -7,17 +7,19 @@
         width: 100vw;
         height: 3.06rem;
         background-color: $mediumgray-color;
-        @include location-shadow;
         text-align: center;
+        @include location-shadow;
 
-        i,
-        span {
+        .fa-map-marker-alt,
+        &__city {
             color: $footer-bg;
             font-size: 0.95rem;
             padding-top: 1rem;
+        }
+        &__city {
             font-weight: 500;
         }
-        i {
+        .fa-map-marker-alt {
             padding-right: 1rem;
             margin-left: -1.8rem; 
         }
