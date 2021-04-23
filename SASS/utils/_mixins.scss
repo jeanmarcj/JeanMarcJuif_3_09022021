@@ -28,3 +28,41 @@
     -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
     -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
 }
+
+// Media Queries //
+
+// Phone > 375px
+@mixin mobile-Medium {
+    @media only screen and (min-width: 375px) {
+        @content;
+    }
+}
+
+// tablet > 768px
+@mixin tablet {
+    @media only screen and (min-width: 765px) {
+        @content;
+    }
+}
+
+// Desktop SM > 1024px
+@mixin desktop-SM {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+// Desktop Medium > 1200px
+@mixin desktop-medium {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Desktop Large
+@mixin desktop-lg {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
