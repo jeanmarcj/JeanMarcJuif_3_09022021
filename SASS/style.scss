@@ -4,6 +4,7 @@
 @import "./base/setup";
 @import "./components/buttons";
 @import "./components/location";
+@import "./components/operation-card";
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./pages/restaurants";
@@ -17,81 +18,6 @@
 
 // Lancer SASS pour ce projet :
 // ./dart-sass/sass SASS/style.scss css/main.css --watch
-
-/*  -------------------
-    Section #operation
-    ------------------- */
-    #operation {
-        // border: 1px solid red;
-        margin: 3.375rem 1rem 0 1.31rem;
-        height: 24.19rem;
-    }
-
-    #operation h2 {
-        // border: 1px solid green;
-        font-size: 1.45rem;
-        margin: 0;
-    }
-
-    .operation-container {
-        margin-top: 2.125rem;
-    }
-
-    .operation-card {
-        border: 1px solid $mediumgray-color;
-        // width: 18.5rem;
-        width: 91%;
-        max-width: 20.5rem;
-        height: 4.625rem;
-        position: relative;
-        margin: 0 auto 2rem auto;
-        border-radius: 30px;
-        background-color: $lightgray-color;
-        @include primary-shadow;
-        display: flex;
-        align-items: center;//Idéal pour le positionnement en hauteur !
-        
-    }
-    .badge {
-        border: 1px solid $primary-color;
-        height: 1.44rem;
-        width: 1.44rem;
-        border-radius: 50%;
-        background-color: $primary-color;
-        color: white;
-        line-height: 1.44rem;
-        font-size: 1rem;
-        padding: 0.3rem;
-        text-align: center;
-        position: absolute;
-        left: -15px;
-    }
-    
-    .operation-card:hover {
-        cursor: pointer;
-        background-color: #ffe8f8;
-
-        transition: background-color ease-in-out 250ms;
-        &>i {
-            color: $primary-color;
-        }
-    }
-    .operation-card i {
-        position: absolute;
-        left: 38px;
-        font-size: 1.2rem;
-        color: $darkgray-color;
-    }
-    .operation-card:nth-child(1) > i {
-        left: 43px;
-    }
-    .operation-title {
-        // border: 1px solid green;
-        font-weight: 500;
-        font-size: 0.7rem;
-        position: absolute;
-        left: 76px;
-    }
 
 /*  -------------------
     #restaurants

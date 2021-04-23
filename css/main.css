@@ -439,6 +439,62 @@ p {
 }
 
 /*  -------------------
+    Section #operation
+    ------------------- */
+.operation-card {
+  border: 1px solid #eaeaea;
+  width: 91%;
+  max-width: 20.5rem;
+  height: 4.625rem;
+  position: relative;
+  margin: 0 auto 2rem auto;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  display: flex;
+  align-items: center;
+}
+.operation-card .badge {
+  border: 1px solid #9356DC;
+  height: 1.44rem;
+  width: 1.44rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  line-height: 1.44rem;
+  font-size: 1rem;
+  padding: 0.3rem;
+  text-align: center;
+  position: absolute;
+  left: -15px;
+}
+.operation-card i {
+  position: absolute;
+  left: 38px;
+  font-size: 1.2rem;
+  color: #7e7e7e;
+}
+.operation-card:nth-child(1) > i {
+  left: 43px;
+}
+.operation-card .operation-title {
+  font-weight: 500;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 76px;
+}
+.operation-card:hover {
+  cursor: pointer;
+  background-color: #ffe8f8;
+  transition: background-color ease-in-out 250ms;
+}
+.operation-card:hover > i {
+  color: #9356DC;
+}
+
+/*  -------------------
     Header #reservation
     ------------------- */
 .header__heading {
@@ -1071,6 +1127,20 @@ nav i {
   text-align: center;
 }
 
+/*  -------------------
+    Section #operation
+    ------------------- */
+.operation {
+  margin: 3.375rem 1rem 0 1.31rem;
+  height: 24.19rem;
+}
+.operation__heading {
+  font-size: 1.45rem;
+}
+.operation__operation-container {
+  margin-top: 2.125rem;
+}
+
 /* Loader keyframes  */
 @keyframes start-loading {
   0% {
@@ -1178,81 +1248,6 @@ nav i {
   font-weight: 300;
   padding: 0 0.5rem;
   margin: 1rem 0 1.88rem 0;
-}
-
-/*  -------------------
-    Section #operation
-    ------------------- */
-#operation {
-  margin: 3.375rem 1rem 0 1.31rem;
-  height: 24.19rem;
-}
-
-#operation h2 {
-  font-size: 1.45rem;
-  margin: 0;
-}
-
-.operation-container {
-  margin-top: 2.125rem;
-}
-
-.operation-card {
-  border: 1px solid #eaeaea;
-  width: 91%;
-  max-width: 20.5rem;
-  height: 4.625rem;
-  position: relative;
-  margin: 0 auto 2rem auto;
-  border-radius: 30px;
-  background-color: #f6f6f6;
-  box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  display: flex;
-  align-items: center;
-}
-
-.badge {
-  border: 1px solid #9356DC;
-  height: 1.44rem;
-  width: 1.44rem;
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: white;
-  line-height: 1.44rem;
-  font-size: 1rem;
-  padding: 0.3rem;
-  text-align: center;
-  position: absolute;
-  left: -15px;
-}
-
-.operation-card:hover {
-  cursor: pointer;
-  background-color: #ffe8f8;
-  transition: background-color ease-in-out 250ms;
-}
-.operation-card:hover > i {
-  color: #9356DC;
-}
-
-.operation-card i {
-  position: absolute;
-  left: 38px;
-  font-size: 1.2rem;
-  color: #7e7e7e;
-}
-
-.operation-card:nth-child(1) > i {
-  left: 43px;
-}
-
-.operation-title {
-  font-weight: 500;
-  font-size: 0.7rem;
-  position: absolute;
-  left: 76px;
 }
 
 /*  -------------------

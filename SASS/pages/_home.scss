@@ -14,4 +14,29 @@
     //     text-align: center;
     // }
 
+/*  -------------------
+    Section #operation
+    ------------------- */
+    .operation {
+        // border: 1px solid red;
+        margin: 3.375rem 1rem 0 1.31rem;
+        height: 24.19rem;
 
+        &__heading {
+            font-size: 1.45rem;
+        }
+
+        &__operation-container {
+            margin-top: 2.125rem;
+        }
+    }
+
+    // #operation h2 {
+    //     // border: 1px solid green;
+    //     font-size: 1.45rem;
+    //     margin: 0;
+    // }
+
+    // .operation-container {
+    //     margin-top: 2.125rem;
+    // }
