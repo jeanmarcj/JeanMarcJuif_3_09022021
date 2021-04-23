@@ -1,48 +1,21 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./vendors/normalize";
+@import "./base/setup";
 @import "./components/buttons";
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./pages/restaurants";
+@import "./pages/home";
 @import "./layouts/keyframes";
+@import "./layouts/logoContainer";
+@import "./layouts/header";
+@import "./layouts/nav.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
 // Lancer SASS pour ce projet :
 // ./dart-sass/sass SASS/style.scss css/main.css --watch
-
-body {
-    font-family: "Roboto", sans-serif;
-    background: white;
-    color: black;
-    font-size: 16px;
-    position: relative;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-a:visited,
-a:link,
-a:focus,
-a:active {
-    color:black;
-}
-
-/*  ------
-    logo
-    ------ */
-    .logo-container {
-        nav {
-            img {
-                display: block;
-                margin: 1.375rem auto;
-                width: 10.125rem;
-            }
-        }
-    }
 
 /*  ---------
     #location

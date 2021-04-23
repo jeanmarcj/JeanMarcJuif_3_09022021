@@ -339,6 +339,26 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background: white;
+  color: black;
+  font-size: 16px;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:active {
+  color: black;
+}
+
 /* Loader keyframes  */
 @keyframes start-loading {
   0% {
@@ -952,30 +972,92 @@ nav i {
     transform: translate(1px, 0);
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-  background: white;
-  color: black;
-  font-size: 16px;
-  position: relative;
+/* Loader keyframes  */
+@keyframes start-loading {
+  0% {
+    opacity: 0;
+    background: #868585;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: white;
+  }
 }
-
-img {
-  width: 100%;
-  height: auto;
+@keyframes display-off {
+  to {
+    visibility: hidden;
+  }
 }
-
-a:visited,
-a:link,
-a:focus,
-a:active {
-  color: black;
+/* Bouncing balls keyframe */
+@keyframes bouncing-loader {
+  to {
+    opacity: 1;
+    transform: translate3d(0, -16px, 0);
+  }
 }
-
+/* Validation animation icon */
+@keyframes validebtn {
+  0% {
+    transform: rotade(-90deg);
+  }
+  20% {
+    transform: rotade(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotade(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotade(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+/* checkbox animation */
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+@keyframes checkbox-contain {
+  0% {
+    transform: translate(50px, 0);
+  }
+  40% {
+    transform: translate(25px, 0);
+  }
+  70% {
+    transform: translate(12px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
 /*  ------
     logo
     ------ */
-.logo-container nav img {
+.logo-container .logo-container__logo {
   display: block;
   margin: 1.375rem auto;
   width: 10.125rem;
