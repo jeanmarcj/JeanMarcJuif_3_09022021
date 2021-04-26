@@ -1,4 +1,11 @@
 @import "../layouts/_keyframes";
+/*  ------
+    logo
+    ------ */
+    .logo-container {
+
+    }
+
 
 /*  -------------------
     Header #reservation
@@ -7,6 +14,10 @@
         height: 18rem;
         background-color: $lightgray-color;
         text-align: center;
+        @include tablet {
+            width: 95%;
+            margin: 0 auto;
+        }
     }
     // #reservation {
     //     height: 18rem;
@@ -67,6 +78,13 @@
             width: 17rem;
             border-radius: $restaurant-rad;
             @include primary-shadow;
+            @include mobile-medium {
+                width: 21rem;
+                // max-width: 21rem;
+            }
+            @include tablet {
+                margin-bottom: 2.5rem;
+            }
 
             &:hover {
                 background-color: $third-color;

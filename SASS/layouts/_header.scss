@@ -9,7 +9,10 @@
         padding-top: 2.75rem;
         padding-left: 4rem;
         padding-right: 4rem;
-        font-size: 1.3rem;  
+        font-size: 1.3rem;
+        @include mobile-medium {
+            font-size: 1.5rem;
+        }  
     }
 
     .header__byline {
@@ -17,6 +20,9 @@
         font-weight: 300;
         padding: 0 0.5rem;
         margin: 1rem 0 1.88rem 0;
+        @include mobile-medium {
+            font-size: 1.2rem;
+        }
     }
 
 

@@ -9,6 +9,11 @@
         background-color: $mediumgray-color;
         text-align: center;
         @include location-shadow;
+        @include tablet {
+            width: 95%;
+            margin: 0 auto 1rem auto;
+            border-radius: $btn-rad;
+        }
 
         .fa-map-marker-alt,
         &__city {

@@ -425,6 +425,13 @@ p {
   -webkit-box-shadow: 1px 3px 3px 0px rgba(213, 213, 213, 0.75) inset;
   -moz-box-shadow: 1px 3px 3px 0px rgba(213, 213, 213, 0.75) inset;
 }
+@media only screen and (min-width: 765px) {
+  .location {
+    width: 95%;
+    margin: 0 auto 1rem auto;
+    border-radius: 25px;
+  }
+}
 .location .fa-map-marker-alt, .location__city {
   color: #353535;
   font-size: 0.95rem;
@@ -484,6 +491,11 @@ p {
   font-size: 0.8rem;
   position: absolute;
   left: 76px;
+}
+@media only screen and (min-width: 375px) {
+  .operation-card .operation-title {
+    font-size: 1rem;
+  }
 }
 .operation-card:hover {
   cursor: pointer;
@@ -681,12 +693,22 @@ p {
   padding-right: 4rem;
   font-size: 1.3rem;
 }
+@media only screen and (min-width: 375px) {
+  .header__heading {
+    font-size: 1.5rem;
+  }
+}
 
 .header__byline {
   font-size: 1rem;
   font-weight: 300;
   padding: 0 0.5rem;
   margin: 1rem 0 1.88rem 0;
+}
+@media only screen and (min-width: 375px) {
+  .header__byline {
+    font-size: 1.2rem;
+  }
 }
 
 /*  ---------
@@ -826,6 +848,9 @@ p {
     transform: translate(1px, 0);
   }
 }
+/*  ------
+    logo
+    ------ */
 /*  -------------------
     Header #reservation
     ------------------- */
@@ -833,6 +858,12 @@ p {
   height: 18rem;
   background-color: #f6f6f6;
   text-align: center;
+}
+@media only screen and (min-width: 765px) {
+  .header {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 /*  -------------------
@@ -872,6 +903,16 @@ p {
   box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
   -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
   -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+}
+@media only screen and (min-width: 375px) {
+  .restaurants .restaurants__card {
+    width: 21rem;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .restaurants .restaurants__card {
+    margin-bottom: 2.5rem;
+  }
 }
 .restaurants .restaurants__card:hover {
   background-color: #99E2D0;
@@ -1413,51 +1454,6 @@ nav i {
   }
 }
 /* TODO: Animation simple fade */
-/*  ======================
-    Mobile M >375px
-    ====================== */
-@media only screen and (min-width: 375px) {
-  /* Header */
-  #reservation h1 {
-    font-size: 1.5rem;
-  }
-
-  #reservation p {
-    font-size: 1.2rem;
-  }
-
-  #operation .operation-container .operation-card .operation-title {
-    font-size: 1rem;
-  }
-
-  /* Restaurants */
-  #restaurants article {
-    width: 21rem;
-    max-width: 21rem;
-  }
-}
-/*  ======================
-    Tablette >768px
-    ====================== */
-@media only screen and (min-width: 768px) {
-  #location,
-#reservation {
-    width: 95%;
-  }
-
-  #location {
-    margin: 0 auto 1rem auto;
-    border-radius: 25px;
-  }
-
-  #reservation {
-    margin: 0 auto;
-  }
-
-  #restaurants article {
-    margin-bottom: 2.5rem;
-  }
-}
 /*  ======================
     Desktop >1024px
     ====================== */

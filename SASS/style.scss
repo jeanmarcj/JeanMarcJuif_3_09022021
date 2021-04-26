@@ -20,45 +20,6 @@
 // ./dart-sass/sass SASS/style.scss css/main.css --watch
     
 /*  ======================
-    Mobile M >375px
-    ====================== */
-    @media only screen and (min-width: 375px) {
-        /* Header */
-            #reservation h1 {
-                font-size: 1.5rem;
-            }
-            #reservation p {
-                font-size: 1.2rem;
-            }
-            #operation .operation-container .operation-card .operation-title {
-                font-size: 1rem;
-            }
-        /* Restaurants */
-            #restaurants article {
-                width: 21rem;
-                max-width: 21rem;
-            }
-      }
-/*  ======================
-    Tablette >768px
-    ====================== */
-    @media only screen and (min-width: 768px) {
-        #location,
-        #reservation {
-            width: 95%;
-        }
-        #location {
-            margin: 0 auto 1rem auto;
-            border-radius: 25px;
-        }
-        #reservation {
-            margin: 0 auto;
-        }
-        #restaurants article {
-            margin-bottom: 2.5rem;
-        }
-    }
-/*  ======================
     Desktop >1024px
     ====================== */
     @media only screen and (min-width: 1024px) {

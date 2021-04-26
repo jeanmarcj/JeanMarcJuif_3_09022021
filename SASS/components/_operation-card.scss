@@ -49,6 +49,9 @@
             font-size: 0.8rem;
             position: absolute;
             left: 76px;
+            @include mobile-medium {
+                font-size: 1rem;
+            }
         }
 
         &:hover{
