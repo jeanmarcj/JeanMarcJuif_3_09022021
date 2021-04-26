@@ -20,23 +20,6 @@
 // ./dart-sass/sass SASS/style.scss css/main.css --watch
     
 /*  ======================
-    Desktop >1440px
-    ====================== */
-    @media only screen and (min-width: 1440px) {
-        #reservation,
-        #operation,
-        #restaurants,
-        .footer-container {
-            width: 80%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        /* Footer */
-        .logo {
-            margin: 1.5rem auto;
-        }
-    }
-/*  ======================
     Loader Animation
     ====================== */
     .start {

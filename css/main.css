@@ -769,6 +769,11 @@ p {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .footer-container__logo {
+    margin: 1.5rem auto;
+  }
+}
 @media only screen and (min-width: 765px) {
   .footer-container__nav {
     display: flex;
@@ -924,6 +929,13 @@ p {
     height: 15rem;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .header {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 /*  -------------------
     Section #operation
@@ -936,6 +948,13 @@ p {
   .operation {
     margin: 3.75rem 2rem 0 2rem;
     height: 15rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .operation {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .operation__heading {
@@ -970,6 +989,13 @@ p {
     width: 90%;
     margin: 0 auto;
     padding: 0 0 5.44rem 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .restaurants {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .restaurants .container {
@@ -1556,24 +1582,6 @@ nav i {
   }
 }
 /* TODO: Animation simple fade */
-/*  ======================
-    Desktop >1440px
-    ====================== */
-@media only screen and (min-width: 1440px) {
-  #reservation,
-#operation,
-#restaurants,
-.footer-container {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  /* Footer */
-  .logo {
-    margin: 1.5rem auto;
-  }
-}
 /*  ======================
     Loader Animation
     ====================== */

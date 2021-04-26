@@ -28,6 +28,11 @@
         @include desktop-sm {
             height: 15rem;
         }
+        @include desktop-lg {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
     // #reservation {
     //     height: 18rem;
@@ -45,6 +50,11 @@
         @include desktop-sm {
             margin: 3.75rem 2rem 0 2rem;
             height: 15rem;
+        }
+        @include desktop-lg {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
         }
 
         &__heading {
@@ -87,6 +97,11 @@
             width: 90%;
             margin: 0 auto;
             padding: 0 0 5.44rem 0;
+        }
+        @include desktop-lg {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
         }
 
         .container {
