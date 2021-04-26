@@ -46,7 +46,7 @@
 }
 
 // Desktop SM > 1024px
-@mixin desktop-SM {
+@mixin desktop-sm {
     @media only screen and (min-width: 1024px) {
         @content;
     }

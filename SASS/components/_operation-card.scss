@@ -17,6 +17,10 @@
         @include primary-shadow;
         display: flex;
         align-items: center;//Idéal pour le positionnement en hauteur !
+        @include desktop-sm {
+            margin: 0;
+            max-width: 18.5rem;
+        }
         
         .badge {
             border: 1px solid $primary-color;

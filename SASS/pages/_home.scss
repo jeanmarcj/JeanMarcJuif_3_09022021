@@ -3,7 +3,14 @@
     logo
     ------ */
     .logo-container {
-
+        @include desktop-sm {
+            margin: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+            height: 6.5rem;
+        }
     }
 
 
@@ -17,6 +24,9 @@
         @include tablet {
             width: 95%;
             margin: 0 auto;
+        }
+        @include desktop-sm {
+            height: 15rem;
         }
     }
     // #reservation {
@@ -32,13 +42,26 @@
         // border: 1px solid red;
         margin: 3.375rem 1rem 0 1.31rem;
         height: 24.19rem;
+        @include desktop-sm {
+            margin: 3.75rem 2rem 0 2rem;
+            height: 15rem;
+        }
 
         &__heading {
             font-size: 1.45rem;
+            @include desktop-sm {
+                margin-left: 1.25rem;
+            }
         }
 
         &__operation-container {
             margin-top: 2.125rem;
+            @include desktop-sm {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                align-content: center;
+            }
         }
     }
     
@@ -60,15 +83,27 @@
         // border: 1px solid red;
         background-color: $lightgray-color;
         padding-bottom: 4rem;
+        @include desktop-sm {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 0 5.44rem 0;
+        }
 
         .container {
             margin: 0 1.25rem;
+
         }
 
         &__heading {
             margin: 0;
             padding-top: 3.69rem;
             margin-bottom: 1.75rem;
+        }
+        &__container {
+            @include desktop-sm {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         //Article
@@ -84,6 +119,10 @@
             }
             @include tablet {
                 margin-bottom: 2.5rem;
+            }
+            @include desktop-sm {
+                margin: 0;
+                width: 13rem;
             }
 
             &:hover {

@@ -14,6 +14,10 @@
             margin: 0 auto 1rem auto;
             border-radius: $btn-rad;
         }
+        @include desktop-sm {
+            width: 20rem;
+            margin: 0;
+        }
 
         .fa-map-marker-alt,
         &__city {

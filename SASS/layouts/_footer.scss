@@ -9,6 +9,11 @@
         @include tablet {
             padding-bottom: 4.5rem;
         }
+        @include desktop-sm {
+            width: 90%;
+            margin: 0 auto;
+        }
+
         &__logo {
             font-family: $logo-font;
             font-size: 1.15rem;
@@ -18,6 +23,9 @@
                 width: 11rem;
                 margin: 1.5rem auto 1rem auto;
                 font-size: 1.7rem;
+            }
+            @include desktop-sm {
+                font-size: 2rem;
             }
         }
         &__nav {
@@ -32,10 +40,16 @@
             display: block;
             font-weight: 300;
             text-decoration: none;
-            line-height: 1.5rem; 
+            line-height: 1.5rem;
+            @include desktop-sm {
+                font-size: 1.3rem;
+            }
         }
         &__nav a:last-child {
             padding-bottom: 2.3125rem;
+            @include tablet {
+                padding-bottom: 0;
+            }
         }
         &__nav a:nth-child(1) i {
             // border: 1px solid red;

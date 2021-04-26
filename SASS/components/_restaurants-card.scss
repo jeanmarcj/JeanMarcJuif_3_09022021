@@ -45,6 +45,9 @@
             justify-content: space-between;
             flex-direction: row;
             flex-wrap: nowrap;
+            @include desktop-sm {
+                margin: 1.25rem 0.2rem 0 0.2rem;
+            }
 
             .card-footer-title > h3::first-letter,
             .card-footer-title > p::first-letter {
