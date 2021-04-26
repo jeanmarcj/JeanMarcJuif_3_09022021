@@ -44,6 +44,12 @@
             color: $darkgray-color;
         }
 
+        &:nth-child(1) {
+            @include desktop-sm {
+                margin-left: 0.94rem;
+            }
+        }
+
         &:nth-child(1) > i {
             left: 43px;
         }
