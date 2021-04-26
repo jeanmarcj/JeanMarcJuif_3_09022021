@@ -689,6 +689,61 @@ p {
   margin: 1rem 0 1.88rem 0;
 }
 
+/*  ---------
+    Footer
+    --------- */
+.footer-container {
+  border: 1px solid #353535;
+  margin: 0 1.25rem;
+}
+@media only screen and (min-width: 765px) {
+  .footer-container {
+    padding-bottom: 4.5rem;
+  }
+}
+.footer-container__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.15rem;
+  font-weight: 100;
+  margin: 1.5rem 0 1rem 0;
+}
+@media only screen and (min-width: 765px) {
+  .footer-container__logo {
+    width: 11rem;
+    margin: 1.5rem auto 1rem auto;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .footer-container__nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+  }
+}
+.footer-container__nav a {
+  color: white;
+  display: block;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+.footer-container__nav a:last-child {
+  padding-bottom: 2.3125rem;
+}
+.footer-container__nav a:nth-child(1) i {
+  font-size: 1rem;
+}
+.footer-container__nav a:nth-child(2) i {
+  font-size: 0.6rem;
+}
+.footer-container__nav a span {
+  padding-left: 0.4rem;
+}
+.footer-container__nav a span:hover, .footer-container__nav a:nth-child(3):hover, .footer-container__nav a:nth-child(4):hover {
+  text-decoration: underline;
+}
+
 /* Loader keyframes  */
 @keyframes start-loading {
   0% {
@@ -795,8 +850,8 @@ p {
 }
 
 /*  -------------------
-Main .restaurants
-------------------- */
+    Main .restaurants
+    ------------------- */
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 4rem;
@@ -824,6 +879,14 @@ Main .restaurants
 }
 .restaurants .restaurants__card a {
   text-decoration: none;
+}
+
+/*  ---------
+    Footer
+    --------- */
+footer {
+  background-color: #353535;
+  color: white;
 }
 
 /* Loader keyframes  */
@@ -1350,59 +1413,6 @@ nav i {
   }
 }
 /* TODO: Animation simple fade */
-/*  -------------------
-    #restaurants
-    ------------------- */
-/*  ---------
-    Footer
-    --------- */
-footer {
-  background-color: #353535;
-}
-
-.footer-container {
-  border: 1px solid #353535;
-  margin: 0 1.25rem;
-}
-
-.logo {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 1.15rem;
-  font-weight: 100;
-  margin: 1.5rem 0 1rem 0;
-}
-
-.footer-container a {
-  display: block;
-  color: white;
-  font-weight: 300;
-  text-decoration: none;
-  line-height: 1.5rem;
-}
-
-.footer-container a:last-child {
-  padding-bottom: 2.3125rem;
-}
-
-.footer-container a:nth-child(2) i {
-  font-size: 1rem;
-}
-
-.footer-container a:nth-child(3) i {
-  font-size: 0.6rem;
-}
-
-.footer-container a span {
-  padding-left: 0.4rem;
-}
-
-.footer-container a span:hover,
-.footer-container > a:nth-child(4):hover,
-.footer-container > a:nth-child(5):hover {
-  text-decoration: underline;
-}
-
 /*  ======================
     Mobile M >375px
     ====================== */
@@ -1446,22 +1456,6 @@ footer {
 
   #restaurants article {
     margin-bottom: 2.5rem;
-  }
-
-  .logo {
-    width: 11rem;
-    margin: 1.5rem auto 1rem auto;
-    font-size: 1.7rem;
-  }
-
-  .footer-container {
-    padding-bottom: 4.5rem;
-  }
-
-  .footer-links {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.15rem;
   }
 }
 /*  ======================

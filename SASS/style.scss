@@ -18,55 +18,7 @@
 
 // Lancer SASS pour ce projet :
 // ./dart-sass/sass SASS/style.scss css/main.css --watch
-
-/*  -------------------
-    #restaurants
-    ------------------- */
     
-/*  ---------
-    Footer
-    --------- */
-    footer {
-        background-color: $footer-bg;
-    }
-    .footer-container {
-        border: 1px solid $footer-bg;
-        margin: 0 1.25rem;
-    }
-    .logo {
-        font-family: $logo-font;
-        color: white;
-        font-size: 1.15rem;
-        font-weight: 100;
-        margin: 1.5rem 0 1rem 0;
-    }
-    .footer-container a {
-        display: block;
-        color: white;
-        font-weight: 300;
-        text-decoration: none;
-        line-height: 1.5rem;
-    }
-    .footer-container a:last-child {
-        padding-bottom: 2.3125rem;
-    }
-    .footer-container a:nth-child(2) i {
-        // border: 1px solid red;
-        font-size: 1rem;
-    }
-    .footer-container a:nth-child(3) i {
-        // border: 1px solid green;
-        font-size: 0.60rem;
-    }
-    .footer-container a span {
-        padding-left: 0.4rem;
-    }
-    .footer-container a span:hover,
-    .footer-container > a:nth-child(4):hover,
-    .footer-container > a:nth-child(5):hover {
-        text-decoration: underline;
-    }
-
 /*  ======================
     Mobile M >375px
     ====================== */
@@ -104,19 +56,6 @@
         }
         #restaurants article {
             margin-bottom: 2.5rem;
-        }
-        .logo {
-            width: 11rem;
-            margin: 1.5rem auto 1rem auto;
-            font-size: 1.7rem;
-        }
-        .footer-container {
-            padding-bottom: 4.5rem;
-        }
-        .footer-links {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.15rem;
         }
     }
 /*  ======================

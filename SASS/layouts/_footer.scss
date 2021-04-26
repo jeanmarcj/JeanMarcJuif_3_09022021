@@ -1,0 +1,89 @@
+//layouts/_footer.scss */
+
+/*  ---------
+    Footer
+    --------- */
+    .footer-container {
+        border: 1px solid $footer-bg;
+        margin: 0 1.25rem;
+        @include tablet {
+            padding-bottom: 4.5rem;
+        }
+        &__logo {
+            font-family: $logo-font;
+            font-size: 1.15rem;
+            font-weight: 100;
+            margin: 1.5rem 0 1rem 0;
+            @include tablet {
+                width: 11rem;
+                margin: 1.5rem auto 1rem auto;
+                font-size: 1.7rem;
+            }
+        }
+        &__nav {
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.15rem;
+            }
+        }
+        &__nav a {
+            color: white;
+            display: block;
+            font-weight: 300;
+            text-decoration: none;
+            line-height: 1.5rem; 
+        }
+        &__nav a:last-child {
+            padding-bottom: 2.3125rem;
+        }
+        &__nav a:nth-child(1) i {
+            // border: 1px solid red;
+            font-size: 1rem;
+        }
+        &__nav a:nth-child(2) i {
+            // border: 1px solid green;
+            font-size: 0.60rem;
+        }
+        &__nav a span {
+            padding-left: 0.4rem;
+        }
+        &__nav a span:hover,
+        &__nav a:nth-child(3):hover,
+        &__nav a:nth-child(4):hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .logo {
+    //     font-family: $logo-font;
+    //     color: white;
+    //     font-size: 1.15rem;
+    //     font-weight: 100;
+    //     margin: 1.5rem 0 1rem 0;
+    // }
+
+    // .footer-container a {
+    //     display: block;
+    //     font-weight: 300;
+    //     text-decoration: none;
+    //     line-height: 1.5rem;
+    // }
+
+    // .footer-container a:last-child {
+    //     padding-bottom: 2.3125rem;
+    // }
+
+    // .footer-container a:nth-child(2) i {
+    //     border: 1px solid red;
+    //     font-size: 1rem;
+    // }
+
+    // .footer-container a:nth-child(3) i {
+    //     // border: 1px solid green;
+    //     font-size: 0.60rem;
+    // }
+
+    // .footer-container a span {
+    //     padding-left: 0.4rem;
+    // }

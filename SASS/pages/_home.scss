@@ -30,6 +30,7 @@
             margin-top: 2.125rem;
         }
     }
+    
 
     // #operation h2 {
     //     // border: 1px solid green;
@@ -41,7 +42,7 @@
     //     margin-top: 2.125rem;
     // }
 
-    /*  -------------------
+/*  -------------------
     Main .restaurants
     ------------------- */
     .restaurants {
@@ -106,3 +107,12 @@
     // #restaurants article a {
     //     text-decoration: none;
     // }
+
+/*  ---------
+    Footer
+    --------- */
+
+    footer {
+        background-color: $footer-bg;
+        color: white;
+    }
