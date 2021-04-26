@@ -18,19 +18,6 @@
 
 // Lancer SASS pour ce projet :
 // ./dart-sass/sass SASS/style.scss css/main.css --watch
-
-/*  ======================
-    Desktop >1200px
-    ====================== */
-    @media only screen and (min-width: 1200px) {
-        #restaurants article {
-            width: 15rem;
-        }
-        .card-footer {
-            margin: 1.25rem 0.9rem 0 1rem;
-        }
-
-    }
     
 /*  ======================
     Desktop >1440px

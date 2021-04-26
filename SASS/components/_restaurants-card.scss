@@ -48,6 +48,9 @@
             @include desktop-sm {
                 margin: 1.25rem 0.2rem 0 0.2rem;
             }
+            @include desktop-md {
+                margin: 1.25rem 0.9rem 0 1rem;
+            }
 
             .card-footer-title > h3::first-letter,
             .card-footer-title > p::first-letter {

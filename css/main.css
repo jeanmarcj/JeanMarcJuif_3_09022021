@@ -562,6 +562,11 @@ p {
     margin: 1.25rem 0.2rem 0 0.2rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .restaurants__card-body .card-footer {
+    margin: 1.25rem 0.9rem 0 1rem;
+  }
+}
 .restaurants__card-body .card-footer .card-footer-title > h3::first-letter,
 .restaurants__card-body .card-footer .card-footer-title > p::first-letter {
   text-transform: uppercase;
@@ -1004,6 +1009,11 @@ p {
   .restaurants .restaurants__card {
     margin: 0;
     width: 13rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .restaurants .restaurants__card {
+    width: 15rem;
   }
 }
 .restaurants .restaurants__card:hover {
@@ -1546,18 +1556,6 @@ nav i {
   }
 }
 /* TODO: Animation simple fade */
-/*  ======================
-    Desktop >1200px
-    ====================== */
-@media only screen and (min-width: 1200px) {
-  #restaurants article {
-    width: 15rem;
-  }
-
-  .card-footer {
-    margin: 1.25rem 0.9rem 0 1rem;
-  }
-}
 /*  ======================
     Desktop >1440px
     ====================== */
