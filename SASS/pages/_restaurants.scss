@@ -23,28 +23,29 @@
 /*  --------
     logo/nav
     -------- */
-    nav {
-        /* border: 1px solid blue; */
-        /* height: 5rem; */
-        position: relative;
-    }
-    nav i {
-        font-size: 1.5rem;
-        color: $footer-bg;
-        position: absolute;
-        left: 1.44rem;
-        top: 0.1rem;
-    }
-    .logo-header {
-        display: block;
-        margin: 1.375rem auto;
-        width: 10.125rem;
-    }
+//    .logo-container {
+//         border: 1px solid blue;
+//         // height: 5rem;
+//         // position: relative;
+
+//     }
+//     nav i {
+//         font-size: 1.5rem;
+//         color: $footer-bg;
+//         position: absolute;
+//         left: 1.44rem;
+//         top: 0.1rem;
+//     }
+//     .logo-header {
+//         display: block;
+//         margin: 1.375rem auto;
+//         width: 10.125rem;
+//     }
 
 /*  -----------------------------
     Restaurant header large image
     ----------------------------- */
-    .img-container {
+    .rest-img-container {
         /* border: 1px solid green; */
         height: 16.56rem;
         background-image: url(../img/restaurants/palette_du_gout.jpg);
@@ -56,180 +57,14 @@
 /*  -----------
     menu - main
     ----------- */
-    .menu-container {
+    .rest-menu-container {
         /* Conserver une bordure ! */
         border: 1px solid $mediumgray-color;
         /* border: 1px solid red; */
         margin: -3.5rem auto 0 auto;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
+        border-top-right-radius: $restaurant-menu-rad;
+        border-top-left-radius: $restaurant-menu-rad;
         background-color: $mediumgray-color;
-    }
-    .menu-header {
-        /* border: 1px solid red; */
-        margin: 2.5rem 1rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    .menu-header h1 {
-        /* border: 1px solid blue; */
-        font-family: "Shrikhand", sans-serif;
-        font-weight: 100;
-        /* font-weight: lighter; */
-        font-size: 1.4rem;
-        letter-spacing: 0.05rem;
-    }
-    .menu-header i {
-        font-size: 1.6rem;
-    }
-
-/*  -----------
-    menu
-    ----------- */
-    .menu {
-    /* border: 1px solid brown; */
-    margin: 2.5rem 1rem;
-    }
-    
-    .menu-starter,
-    .menu-main-dish,
-    .menu-desert,
-    .menu-order {
-        margin-bottom: 2.06rem;
-    }
-
-    %text-ellipsis {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    //New css
-    .menu__item {
-        border: 1px solid white;
-        margin: 0 auto 1rem auto;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
-            -webkit-box-shadow: 3px 3px 7px 0px rgba(146,146,146,0.65);
-            -moz-box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
-        opacity: 0;
-        display: flex;
-        justify-content: space-between;
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 33%;
-        overflow: hidden;
-        cursor: pointer;
-
-        .menu__card-title {
-            border: 1px solid red;
-            width: 80%;
-            padding: 10px;
-
-            .menu__item-title {
-                margin: 0 0 0.8rem 0;
-                font-size: 1.05rem;
-                @extend %text-ellipsis;
-            }
-            .menu__item-description {
-                font-size: 0.88rem;
-                @extend %text-ellipsis;
-                /* Important de donnner une largeur pour 'ellipsis' */
-                width: 16rem;
-            }
-        }
-        .price__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1.06rem;
-            font-weight: bold;
-            margin-top: 18px;
-            padding-right: 10px;
-            text-align: right;
-        }
-        .checkbox {
-            // border: 1px solid green;
-            display: none;
-            width: 30%;
-            border-bottom-right-radius: 20px;
-            border-top-right-radius: 20px;
-            
-            .btn-circle {
-                font-size: 24px;
-                color: white;
-                transform: rotate(360deg);
-            }
-        }
-    }
-    .menu__item:hover .price__container {
-        animation: checkbox-contain ease 0.3s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        min-width: 3.125rem;
-    }
-    .menu__item:hover .checkbox {
-        display: block;
-        background-color: $third-color;
-        max-width: 3.125rem;
-        overflow: hidden;
-        animation: checkbox ease 0.3s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        transform-origin: 50% 50%;
-    }
-    .menu__item:hover .btn-circle {
-        position: absolute;
-        left: 27%;
-        top: 35%;
-        background-color: $third-color;
-        animation: validbtn ease 0.5s 1;
-    }
-
-    //Old CSS
-    .menu-item {
-        border: 1px solid white;
-        margin-bottom: 1rem;
-        margin: 0 auto 1rem auto;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
-            -webkit-box-shadow: 3px 3px 7px 0px rgba(146,146,146,0.65);
-            -moz-box-shadow: 3px 3px 7px 0px rgba(146, 146, 146, 0.65);
-        opacity: 0;
-    }
-    .article-title {
-        margin: 1.06rem 0 0 0.8rem;
-        font-size: 1.05rem;
-        @extend %text-ellipsis;
-    }
-    .description-container {
-        /* border: 1px solid red; */
-        margin: 0.5rem 1.44rem 0.8rem 0.8rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .article-price {
-        font-weight: 600;
-    }
-
-    .article-description {
-        font-size: 0.88rem;
-        @extend %text-ellipsis;
-        /* Important de donnner une largeur pour 'ellipsis' */
-        width: 16rem;
-        
-    }
-
-    .menu-order {
-        /* border: 1px solid green; */
-        text-align: center;
-        /* margin-bottom: 2.16rem; */
-    }
-    .btn-primary {
-        padding: 0 3.06rem;
     }
 
 /*  ======================

@@ -1,0 +1,31 @@
+// layouts/_restMenu.scss
+
+/*  -----------
+    menu - main
+    ----------- */
+    .rest-menu-container {
+        &__menu-header {
+            margin: 2.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            &__title {
+                font-family: "Shrikhand", sans-serif;
+                font-weight: 100;
+                /* font-weight: lighter; */
+                font-size: 1.4rem;
+                letter-spacing: 0.05rem;
+            }
+            i {
+                font-size: 1.6rem;
+            }
+        }
+        .rest-menu {
+            margin: 2.5rem 1rem;
+            &__section {
+                margin-bottom: 2.06rem;
+                &__container {
+                    // border: 1px solid blue;
+                }
+            }
+        }
+    }

@@ -28,130 +28,128 @@
 
     <body>
         <!-- header -->
-        <nav>
+        <nav class="logo-container">
           <a href="../../index.html">
-            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-left logo-container__left-arrow"></i>
           </a>
-          <img src="../../img/logo/ohmyfood.png" alt="Logo ohmyfood" class="logo-header" />
+          <img src="../../img/logo/ohmyfood.png" alt="Logo ohmyfood" class="logo-container__logo" />
         </nav>
         
         <!-- restaurant image -->
-        <div class="img-container">
+        <div class="rest-img-container">
           <!-- css backgroud img -->
         </div>
 
-        <main class="menu-container">
+        <main class="rest-menu-container">
 
-            <div class="menu-header">
-              <h1>La palette du goût</h1>
+            <div class="rest-menu-container__menu-header">
+              <h1 class="rest-menu-container__menu-header__title">La palette du goût</h1>
               <i class="far fa-heart default-icon"></i>
               <i class="fas fa-heart hover-icon"></i>
             </div><!-- menu-header -->
 
             <!-- Menu -->
-            <div class="menu">
+            <div class="rest-menu">
               
               <!-- Starter -->
-              <section class="menu-starter">
+              <section class="rest-menu__section">
                 <h2 class="menu-title fade-in-5">Entrées</h2>
                 <hr class="divider fade-in-5">
 
-                <div class="starter-container">
-                  <article class="fade-in-5 menu__item">
-                    <div class="menu__card-title">
-                      <h3 class="menu__item-title">Fricassée d'escargot</h3>
-                      <p class="menu__item-description">Au piment d'espelette</p>
-                    </div>
-                    <div class="price__container">
-                      <span>25€</span>
-                    </div>
-                    <div class="checkbox">
-                      <i class="fas fa-check-circle btn-circle"></i>
+                <div class="rest-menu__section__container">
+                  
+                  <article class="fade-in-5 menu-item-card">
+                    <h3 class="menu-item-card__title">Fricassée d'escargot</h3>
+                    <div class="menu-item-card__description">
+                      <p>Au piment d'espelette</p>
+                      <span class="menu-item-card__description__price">25€</span>
                     </div>
                   </article>
 
-                  <article class="fade-in-6 menu-item">
-                    <h3 class="article-title">Foie gras de canard mi-cuit</h3>
-                    <div class="description-container">
-                      <p class="article-description">Et ses copeaux de truffe noire</p>
-                      <span class="article-price">35€</span>
+                  <article class="fade-in-6 menu-item-card">
+                    <h3 class="menu-item-card__title">Foie gras de canard mi-cuit</h3>
+                    <div class="menu-item-card__description">
+                      <p>Et ses copeaux de truffe noire</p>
+                      <span class="menu-item-card__description__price">35€</span>
                     </div>
                   </article>
 
-                  <article class="fade-in-6 menu-item">
-                    <h3 class="article-title">Œuf au plat</h3>
-                    <div class="description-container">
-                      <p class="article-description">Assaisonné à la truffe sur lit de caviar</p>
-                      <span class="article-price">20€</span>
+                  <article class="fade-in-6 menu-item-card">
+                    <h3 class="menu-item-card__title">Œuf au plat</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">Assaisonné à la truffe sur lit de caviar</p>
+                      <span class="menu-item-card__description__price">20€</span>
                     </div>
                   </article>
                 </div>
               </section>
 
               <!-- Menu Main Dish -->
-              <section class="menu-main-dish">
+              <section class="rest-menu__section">
+
                 <h2 class="menu-title fade-in-8">Plats</h2>
                 <hr class="divider fade-in-8">
 
-                <div class="main-dish-container">
-                  <article class="fade-in-8 menu-item">
-                    <h3 class="article-title">Filet de bœuf aux herbes</h3>
-                    <div class="description-container">
-                      <p class="article-description">Accompagné de sa ribambelle de légumes</p>
-                      <span class="article-price">40€</span>
+                <div class="rest-menu__section__container">
+                  <article class="fade-in-8 menu-item-card">
+                    <h3 class="menu-item-card__title">Filet de bœuf aux herbes</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">Accompagné de sa ribambelle de légumes</p>
+                      <span class="menu-item-card__description__price">40€</span>
                     </div>
                   </article>
 
-                  <article class="fade-in-9 menu-item">
-                    <h3 class="article-title">Parmentier de queue de bœuf</h3>
-                    <div class="description-container">
-                      <p class="article-description">&#192; la truffe noire sur sa purée de panais</p>
-                      <span class="article-price">35€</span>
+                  <article class="fade-in-9 menu-item-card">
+                    <h3 class="menu-item-card__title">Parmentier de queue de bœuf</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">&#192; la truffe noire sur sa purée de panais</p>
+                      <span class="menu-item-card__description__price">35€</span>
                     </div>
                   </article>
 
-                  <article class="fade-in-9 menu-item">
-                    <h3 class="article-title">Filet de Turbot</h3>
-                    <div class="description-container">
-                      <p class="article-description">Aux agrumes</p>
-                      <span class="article-price">44€</span>
+                  <article class="fade-in-9 menu-item-card">
+                    <h3 class="menu-item-card__title">Filet de Turbot</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">Aux agrumes</p>
+                      <span class="menu-item-card__description__price">44€</span>
                     </div>
                   </article>
                 </div>
               </section>
 
-              <section class="menu-desert">
+              <section class="rest-menu__section">
                 <h2 class="menu-title fade-in-11">Desserts</h2>
                 <hr class="divider fade-in-11">
 
-                <div class="desert-container">
-                  <article class="fade-in-11 menu-item">
-                    <h3 class="article-title">Paris-Brest</h3>
-                    <div class="description-container">
-                      <p class="article-description">Revisité</p>
-                      <span class="article-price">18€</span>
+                <div class="rest-menu__section__container">
+
+                  <article class="fade-in-11 menu-item-card">
+                    <h3 class="menu-item-card__title">Paris-Brest</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">Revisité</p>
+                      <span class="menu-item-card__description__price">18€</span>
                     </div>
                   </article>
 
-                  <article class="fade-in-12 menu-item">
-                    <h3 class="article-title">Macaron au chocolat d'exception</h3>
-                    <div class="description-container">
-                      <p class="article-description">Et glace à la vanille de Madagascar</p>
-                      <span class="article-price">22€</span>
+                  <article class="fade-in-12 menu-item-card">
+                    <h3 class="menu-item-card__title">Macaron au chocolat d'exception</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">Et glace à la vanille de Madagascar</p>
+                      <span class="menu-item-card__description__price">22€</span>
                     </div>
                   </article>
 
-                  <article class="fade-in-12 menu-item">
-                    <h3 class="article-title">Mousse au chocolat</h3>
-                    <div class="description-container">
-                      <p class="article-description">Au piment d'espelette et à la truffe noire</p>
-                      <span class="article-price">23€</span>
+                  <article class="fade-in-12 menu-item-card">
+                    <h3 class="menu-item-card__title">Mousse au chocolat</h3>
+                    <div class="menu-item-card__description">
+                      <p class="">Au piment d'espelette et à la truffe noire</p>
+                      <span class="menu-item-card__description__price">23€</span>
                     </div>
                   </article>
               </div>
               </section>
 
-              <section class="menu-order">
+              <section class="rest-menu__section">
                 <div class="btn">
                   <div class="btn-primary">
                     <span>Commander</span>
