@@ -65,9 +65,9 @@
     }
 
 
-/*  -------------------
-    Header #reservation
-    ------------------- */
+/*  --------------------
+    Header - reservation
+    -------------------- */
     .header {
         height: 18rem;
         background-color: $lightgray-color;
@@ -85,11 +85,6 @@
             margin-left: auto;
         }
     }
-    // #reservation {
-    //     height: 18rem;
-    //     background-color: $lightgray-color;
-    //     text-align: center;
-    // }
 
 /*  -------------------
     Section #operation
@@ -125,17 +120,6 @@
             }
         }
     }
-    
-
-    // #operation h2 {
-    //     // border: 1px solid green;
-    //     font-size: 1.45rem;
-    //     margin: 0;
-    // }
-
-    // .operation-container {
-    //     margin-top: 2.125rem;
-    // }
 
 /*  -------------------
     Main .restaurants
@@ -172,7 +156,7 @@
             }
         }
 
-        //Article
+        // Article
         .restaurants__card {
             margin: 0 auto 1.125rem auto;
             height: 15.75rem;
@@ -203,36 +187,7 @@
                 text-decoration: none;
             }
         }
-
     }
-
-    // .container {
-    //     // border: 1px solid green;
-    //     margin: 0 1.25rem;
-    // }
-
-    // #restaurants h2 {
-    //     margin: 0;
-    //     padding-top: 3.69rem;
-    //     margin-bottom: 1.75rem;
-    // }
-
-    // #restaurants article {
-    //     // border: 1px solid black;
-    //     margin: 0 auto 1.125rem auto;
-    //     height: 15.75rem;
-    //     width: 17rem;
-    //     // border-radius: 15px;
-    //     border-radius: $restaurant-rad;
-    //     @include primary-shadow;
-    // }
-    // #restaurants article:hover {
-    //     background-color: $third-color;
-    //     transition: 1.2s ease-in-out;
-    // }
-    // #restaurants article a {
-    //     text-decoration: none;
-    // }
 
 /*  ---------
     Footer

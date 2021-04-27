@@ -13,10 +13,11 @@
 @import "./layouts/nav";
 @import "./layouts/footer";
 @import "./layouts/restMenu";
+@import "./layouts/animations";
 @import "./pages/home";
 @import "./pages/restaurants";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
-// Lancer SASS pour ce projet :
+// Lancer SASS localement pour ce projet :
 // ./dart-sass/sass SASS/style.scss css/main.css --watch

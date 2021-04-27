@@ -1,4 +1,8 @@
-/* Loader keyframes  */
+// layouts/_keyframes.scss
+
+/* ------------------------------ */
+/* Loader keyframes - index.html  */
+/* ------------------------------ */
 
 @keyframes start-loading {
   0% {
@@ -27,6 +31,22 @@
   }
 }
 
+/* ------------------------------------------*/
+/* fade in & translateY restaurants template */
+/* ------------------------------------------*/
+    @keyframes fadein {
+      0% {
+          opacity: 0;
+          transform: translateY(25px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+
+/* TODO: Check - Validation animation on restaurants template */
 
 /* Validation animation icon */
 
