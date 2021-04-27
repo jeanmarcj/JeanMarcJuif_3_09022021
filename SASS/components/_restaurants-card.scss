@@ -46,7 +46,7 @@
             flex-direction: row;
             flex-wrap: nowrap;
             @include desktop-sm {
-                margin: 1.25rem 0.2rem 0 0.5rem;
+                margin: 1.25rem 0.7rem 0 0.5rem;
             }
             @include desktop-md {
                 margin: 1.25rem 0.9rem 0 1rem;
@@ -59,6 +59,15 @@
 
             .card-footer-title p {
                 margin-top: 0.3rem;
+            }
+
+            .card-footer-title h3 {
+                @include desktop-sm {
+                    font-size: 1rem;
+                }
+                @include desktop-md {
+                    font-size: 1.17rem;
+                }
             }
 
             .card-footer-like {
@@ -83,22 +92,22 @@
 
 /*  ---------------------
     Heart icon transition
-    ------------------- */
-
+    --------------------- */
+    
     .fa-heart.hover-icon {
         position: absolute;
         left: 0;
         opacity: 0;
-
+        // color: transparent;
         &:hover {
             opacity: 1;
             z-index: 999;
             background: linear-gradient($secondary-color, $primary-color);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             -moz-background-clip: text;
+            -webkit-background-clip: text;
+                    background-clip: text;
             -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
             transition: 0.7s 0s ease;
         }
     }

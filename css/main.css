@@ -565,7 +565,7 @@ p {
 }
 @media only screen and (min-width: 1024px) {
   .restaurants__card-body .card-footer {
-    margin: 1.25rem 0.2rem 0 0.5rem;
+    margin: 1.25rem 0.7rem 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -579,6 +579,16 @@ p {
 }
 .restaurants__card-body .card-footer .card-footer-title p {
   margin-top: 0.3rem;
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants__card-body .card-footer .card-footer-title h3 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .restaurants__card-body .card-footer .card-footer-title h3 {
+    font-size: 1.17rem;
+  }
 }
 .restaurants__card-body .card-footer .card-footer-like {
   position: relative;
@@ -596,7 +606,7 @@ p {
 
 /*  ---------------------
     Heart icon transition
-    ------------------- */
+    --------------------- */
 .fa-heart.hover-icon {
   position: absolute;
   left: 0;
@@ -606,11 +616,11 @@ p {
   opacity: 1;
   z-index: 999;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
   -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   transition: 0.7s 0s ease;
 }
 
