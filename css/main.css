@@ -637,10 +637,56 @@ p {
   -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
   opacity: 0;
 }
+@media only screen and (min-width: 375px) {
+  .menu-item-card {
+    max-width: 20rem;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .menu-item-card {
+    max-width: 30rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-item-card {
+    margin: 0;
+    width: 18rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu-item-card {
+    width: 21rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .menu-item-card {
+    width: 25rem;
+  }
+}
 .menu-item-card__title {
   width: 80%;
   margin: 1.06rem 0 0 0.8rem;
   font-size: 1.05rem;
+}
+@media only screen and (min-width: 765px) {
+  .menu-item-card__title {
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-item-card__title {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu-item-card__title {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .menu-item-card__title {
+    font-size: 1.25rem;
+  }
 }
 .menu-item-card__description {
   margin: 0.5rem 1.44rem 0.8rem 0.8rem;
@@ -650,10 +696,37 @@ p {
 .menu-item-card__description p {
   font-size: 0.88rem;
   /* Important de donnner une largeur pour 'ellipsis' */
-  width: 80%;
+  width: 85%;
+}
+@media only screen and (min-width: 765px) {
+  .menu-item-card__description p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-item-card__description p {
+    font-size: 0.68rem;
+    line-height: 1.9;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu-item-card__description p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .menu-item-card__description p {
+    font-size: 1rem;
+  }
 }
 .menu-item-card__description__price {
   font-weight: 600;
+}
+@media only screen and (min-width: 765px) {
+  .menu-item-card__description__price {
+    font-size: 1.1rem;
+  }
 }
 
 /* Loader keyframes  */
@@ -873,6 +946,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 375px) {
+  .rest-menu-container__menu-header {
+    justify-content: center;
+  }
+}
 .rest-menu-container__menu-header__title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
@@ -880,8 +958,20 @@ p {
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
 }
+@media only screen and (min-width: 765px) {
+  .rest-menu-container__menu-header__title {
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+  }
+}
 .rest-menu-container__menu-header i {
   font-size: 1.6rem;
+  align-self: center;
+}
+@media only screen and (min-width: 375px) {
+  .rest-menu-container__menu-header i {
+    margin-left: 1rem;
+  }
 }
 .rest-menu-container .rest-menu {
   margin: 2.5rem 1rem;
@@ -889,6 +979,18 @@ p {
 .rest-menu-container .rest-menu__section {
   margin-bottom: 2.06rem;
 }
+@media only screen and (min-width: 1024px) {
+  .rest-menu-container .rest-menu__section {
+    margin: 5rem 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .rest-menu-container .rest-menu__section__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 /* Loader keyframes  */
 @keyframes start-loading {
   0% {
@@ -1275,6 +1377,11 @@ footer {
   text-transform: uppercase;
   opacity: 0;
 }
+@media only screen and (min-width: 765px) {
+  .menu-title {
+    font-size: 1.45rem;
+  }
+}
 
 .divider {
   width: 2.2rem;
@@ -1284,10 +1391,12 @@ footer {
   background: #99E2D0;
   opacity: 0;
 }
+@media only screen and (min-width: 765px) {
+  .divider {
+    width: 3.5rem;
+  }
+}
 
-/*  --------
-    logo/nav
-    -------- */
 /*  -----------------------------
     Restaurant header large image
     ----------------------------- */
@@ -1298,6 +1407,11 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 55%;
+}
+@media only screen and (min-width: 1024px) {
+  .rest-img-container {
+    background-position: 50% 60%;
+  }
 }
 
 /*  -----------
@@ -1312,166 +1426,17 @@ footer {
   border-top-left-radius: 30px;
   background-color: #eaeaea;
 }
-
-/*  ======================
-    Responsive design
-    ====================== */
-/*  ======================
-    Mobile M >375px
-    ====================== */
-@media only screen and (min-width: 375px) {
-  /* menu */
-  .menu-header {
-    justify-content: center;
-  }
-
-  .menu-header .far {
-    margin-left: 1rem;
-  }
-
-  .menu-item {
-    max-width: 20rem;
-  }
-
-  .menu__item {
-    max-width: 20rem;
-  }
-}
-/*  ======================
-    Tablet >768px
-    ====================== */
-@media only screen and (min-width: 768px) {
-  .menu-header h1 {
-    font-size: 1.9rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .menu-title {
-    font-size: 1.45rem;
-  }
-
-  .divider {
-    width: 3.5rem;
-  }
-
-  .menu-item {
-    max-width: 30rem;
-  }
-
-  .article-title {
-    font-size: 1.15rem;
-  }
-
-  .article-description {
-    font-size: 1.1rem;
-    width: 21rem;
-  }
-
-  .article-price {
-    font-size: 1.1rem;
-  }
-
-  .btn-primary {
-    width: 15rem;
-  }
-
-  .menu__item {
-    max-width: 30rem;
-  }
-}
-/*  ======================
-    Desktop >1024px
-    ====================== */
 @media only screen and (min-width: 1024px) {
-  .img-container {
-    background-position: 50% 60%;
-  }
-
-  .menu-container {
+  .rest-menu-container {
     width: 90%;
   }
-
-  .menu-starter,
-.menu-main-dish,
-.menu-desert,
-.menu-order {
-    margin: 5rem 0;
-  }
-
-  .starter-container,
-.main-dish-container,
-.desert-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu-item {
-    margin: 0;
-    width: 18rem;
-  }
-
-  .article-title {
-    font-size: 1.05rem;
-  }
-
-  .article-description {
-    width: 13rem;
-    font-size: 0.68rem;
-    line-height: 1.5;
-  }
-
-  .menu__item {
-    max-width: 18rem;
-  }
 }
-/*  ======================
-    Desktop >1200px
-    ====================== */
-@media only screen and (min-width: 1200px) {
-  .menu-item {
-    width: 21rem;
-  }
-
-  .article-title {
-    font-size: 1.15rem;
-  }
-
-  .article-description {
-    width: 17rem;
-    font-size: 0.85rem;
-    line-height: 1;
-  }
-}
-/*  ======================
-    Desktop >1440px
-    ====================== */
 @media only screen and (min-width: 1440px) {
-  .menu-container {
+  .rest-menu-container {
     max-width: 79.19rem;
   }
-
-  .menu-item {
-    width: 25rem;
-  }
-
-  .article-title {
-    font-size: 1.25rem;
-  }
-
-  .article-description {
-    font-size: 1rem;
-    width: 21rem;
-  }
-
-  .footer-container {
-    width: 88%;
-  }
-
-  .btn-primary span {
-    font-size: 1.5rem;
-    line-height: 2.1;
-  }
 }
+
 /*  -----------
     animations
     ----------- */

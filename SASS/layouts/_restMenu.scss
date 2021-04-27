@@ -8,23 +8,42 @@
             margin: 2.5rem 1rem;
             display: flex;
             justify-content: space-between;
+            @include mobile-medium {
+                justify-content: center;
+            }
             &__title {
                 font-family: "Shrikhand", sans-serif;
                 font-weight: 100;
                 /* font-weight: lighter; */
                 font-size: 1.4rem;
                 letter-spacing: 0.05rem;
+                @include tablet {
+                    font-size: 1.9rem;
+                    letter-spacing: 0.1rem;
+                }
             }
             i {
                 font-size: 1.6rem;
+                align-self: center;
+                @include mobile-medium {
+                    margin-left: 1rem;
+                }
             }
         }
         .rest-menu {
             margin: 2.5rem 1rem;
             &__section {
                 margin-bottom: 2.06rem;
+                @include desktop-sm {
+                    margin: 5rem 0;
+                }
                 &__container {
                     // border: 1px solid blue;
+                    @include desktop-sm {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
                 }
             }
         }
