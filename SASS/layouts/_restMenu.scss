@@ -11,6 +11,9 @@
             @include mobile-medium {
                 justify-content: center;
             }
+            // Ajout
+            position: relative;
+
             &__title {
                 font-family: "Shrikhand", sans-serif;
                 font-weight: 100;
@@ -25,6 +28,8 @@
             i {
                 font-size: 1.6rem;
                 align-self: center;
+                color: $darkgray-color;
+                cursor: pointer;
                 @include mobile-medium {
                     margin-left: 1rem;
                 }

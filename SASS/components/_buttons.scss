@@ -1,8 +1,8 @@
 // composants/_button.scss
 
-/*  -------------------
-    Header #reservation
-    ------------------- */
+/*  ----------------------------
+    Reservations & Order buttons
+    ---------------------------- */
 
     .btn {
         margin: 2rem auto;
@@ -49,3 +49,13 @@
             }
         }
     }
+
+    /*  ----------------------------
+        Fill-up the Heart on over 
+        ---------------------------- */
+        .like {
+            // border: 1px solid red;
+            position: relative;
+            margin-top: 0.3rem;
+
+        }

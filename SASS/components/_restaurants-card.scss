@@ -99,7 +99,9 @@
         left: 0;
         opacity: 0;
         // color: transparent;
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
             opacity: 1;
             z-index: 999;
             background: linear-gradient($secondary-color, $primary-color);
@@ -108,7 +110,7 @@
                     background-clip: text;
             -moz-text-fill-color: transparent;
             -webkit-text-fill-color: transparent;
-            transition: 0.7s 0s ease;
+            transition: 1s 0s ease;
         }
     }
 

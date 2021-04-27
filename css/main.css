@@ -366,9 +366,9 @@ p {
   margin: 0;
 }
 
-/*  -------------------
-    Header #reservation
-    ------------------- */
+/*  ----------------------------
+    Reservations & Order buttons
+    ---------------------------- */
 .btn {
   margin: 2rem auto;
   display: flex;
@@ -413,6 +413,14 @@ p {
   background: linear-gradient(to bottom, #ffbaea 0%, #f9b8e8 8%, #ea91dd 46%, #ac79d8 93%);
   opacity: 0;
   z-index: -1;
+}
+
+/*  ----------------------------
+    Fill-up the Heart on over 
+    ---------------------------- */
+.like {
+  position: relative;
+  margin-top: 0.3rem;
 }
 
 /*  ---------
@@ -612,7 +620,7 @@ p {
   left: 0;
   opacity: 0;
 }
-.fa-heart.hover-icon:hover {
+.fa-heart.hover-icon:hover, .fa-heart.hover-icon:focus, .fa-heart.hover-icon:active {
   opacity: 1;
   z-index: 999;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -621,7 +629,7 @@ p {
   background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  transition: 0.7s 0s ease;
+  transition: 1s 0s ease;
 }
 
 .fa-heart.default-icon:hover {
@@ -971,6 +979,7 @@ p {
   margin: 2.5rem 1rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 @media only screen and (min-width: 375px) {
   .rest-menu-container__menu-header {
@@ -993,6 +1002,8 @@ p {
 .rest-menu-container__menu-header i {
   font-size: 1.6rem;
   align-self: center;
+  color: #7e7e7e;
+  cursor: pointer;
 }
 @media only screen and (min-width: 375px) {
   .rest-menu-container__menu-header i {
