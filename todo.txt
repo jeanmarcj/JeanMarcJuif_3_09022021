@@ -55,11 +55,6 @@ Un exemple de l’effet attendu est fourni.
 ================================================================
 
 
-Dans le css -> Faire un import des classes communes à toutes les pages via SCSS.
-Factoriser les classes CSS pour éviter les répétissions (idem classe btn)
-comme dans le menu, le footer etc.
-
-
 #1 Dans le footer, ne pas utiliser d'image, juste un texte avec la police --> OK
 #2 Propriété CSS: text ellipsis --> OK
 
@@ -78,25 +73,31 @@ Fin de la formation OC Simplifiez-vous le CSS avec Sass --> OK.
 Création de la structure de fichiers SASS 7-1 --> OK.
 
 20/04/2021
-Animation loader à travailler pour qu'elle soit plus lisible et percutante.
 Animation plus percutante --> Animation corrigée.
-Animation de la case à cocher dans la page restaurant --> A faire.
-Passer en tout SCSS --> En cours (structure OK avec import des fichiers)
-Créer des sélecteurs HTML avec BAM (voir cours)
-Nommer les sélecteurs avec efficacité (Voir PDF)
-Refactoriser le SCSS avec le nesting (imbrication des sélecteurs pour un code plus lisible)
+Animation de la case à cocher dans la page restaurant --> A faire. Voir démo.
+Passer en tout SCSS --> OK.
+Créer des sélecteurs HTML avec BAM (voir cours) --> OK.
+Nommer les sélecteurs avec efficacité (Voir PDF) --> OK.
+Refactoriser le SCSS avec le nesting (imbrication des sélecteurs pour un code plus lisible) --> OK
 Refactoriser avec les variables SASS --> Variables OK.
-Gestion des breakpoints avec SASS.
-Découpage de la structure des pages HTML.
+Gestion des breakpoints avec SASS --> OK Responsive OK.
 Créer les pages restaurants
-Vérification du code W3C
+
 
 Priorités session de mentorat du 20/04
-Terminer l'animation du bouton check-box.
-Améliorer l'animation du loader.
-Améliorer la refonte du code source SCSS.
-Reproduire les autres pages de menu.
+Terminer l'animation du bouton check-box --> Voir démo pour validation.
+Améliorer l'animation du loader --> Fait à vérifier.
+Améliorer la refonte du code source SCSS --> Fait entièrement mis à jour voir plus haut.
+Reproduire les autres pages de menu --> A faire.
 
+Session du 27/04/2021
+Problème avec le remplissage du coeur dans le template restaurants.
+Le coeur doit pouvoir se remplir uniquement en version desktop...
+Intégration de l'animation check-box.
+Intégrer une fonction pour l'animation fade-in dans le SCSS ?
+Intégrer SASS dans le projet en version globale (via node).
+Validation W3C.
+Présentation du projet en PPT pour soutenance.
 
 
 
