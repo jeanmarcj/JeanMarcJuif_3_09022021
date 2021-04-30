@@ -339,6 +339,10 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: white;
@@ -861,6 +865,7 @@ p {
   color: #353535;
   position: absolute;
   left: 1.44rem;
+  top: 0.18rem;
 }
 
 /*  -------------------

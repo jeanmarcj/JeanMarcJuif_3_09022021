@@ -1,5 +1,9 @@
 // Main setup for this project
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $text-font;
     background: white;
