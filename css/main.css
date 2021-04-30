@@ -677,7 +677,7 @@ p {
 }
 @media only screen and (min-width: 1024px) {
   .menu-item {
-    margin: 0;
+    margin: 1rem 0 1rem 0;
     min-width: 18rem;
     width: 18rem;
   }
@@ -846,7 +846,7 @@ p {
   color: #353535;
   position: absolute;
   left: 1.44rem;
-  top: 0.18rem;
+  top: 2.6rem;
 }
 
 /*  -------------------
@@ -1016,6 +1016,7 @@ p {
   .rest-menu-container .rest-menu__section__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
