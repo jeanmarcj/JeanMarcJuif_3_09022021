@@ -476,9 +476,9 @@ p {
   margin: 0 auto 2rem auto;
   border-radius: 30px;
   background-color: #f6f6f6;
-  box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  box-shadow: 0px 3px 15px 0px #92929265;
+  -webkit-box-shadow: 0px 3px 15px 0px #92929265;
+  -moz-box-shadow: 0px 3px 15px 0px #92929265;
   display: flex;
   align-items: center;
 }
@@ -654,9 +654,9 @@ p {
   margin: 0 auto 1rem auto;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  box-shadow: 0px 3px 15px 0px #92929265;
+  -webkit-box-shadow: 0px 3px 15px 0px #92929265;
+  -moz-box-shadow: 0px 3px 15px 0px #92929265;
   opacity: 0;
 }
 @media only screen and (min-width: 375px) {
@@ -1346,9 +1346,9 @@ p {
   height: 15.75rem;
   width: 17rem;
   border-radius: 15px;
-  box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  box-shadow: 0px 3px 15px 0px #92929265;
+  -webkit-box-shadow: 0px 3px 15px 0px #92929265;
+  -moz-box-shadow: 0px 3px 15px 0px #92929265;
 }
 @media only screen and (min-width: 375px) {
   .restaurants .restaurants__card {

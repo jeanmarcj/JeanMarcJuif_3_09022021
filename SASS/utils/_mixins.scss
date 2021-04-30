@@ -19,9 +19,9 @@
 }
 
 @mixin primary-shadow {
-  box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -webkit-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
-  -moz-box-shadow: 5px 3px 14px 0px rgba(146, 146, 146, 0.65);
+  box-shadow: 0px 3px 15px 0px #92929265;
+  -webkit-box-shadow: 0px 3px 15px 0px #92929265;
+  -moz-box-shadow: 0px 3px 15px 0px #92929265;
 }
 
 // Media Queries //
