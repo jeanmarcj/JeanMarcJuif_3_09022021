@@ -33,6 +33,9 @@
                 @include mobile-medium {
                     margin-left: 1rem;
                 }
+                @include tablet {
+                    font-size: 1.9rem;
+                }
             }
         }
         .rest-menu {

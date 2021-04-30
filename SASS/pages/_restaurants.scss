@@ -10,6 +10,10 @@
         opacity: 0;
         @include tablet {
             font-size: 1.45rem;
+            text-align: center;
+        }
+        @include desktop-sm {
+            text-align: left;
         }
     }
     .divider {
@@ -21,6 +25,10 @@
         opacity: 0;
         @include tablet {
             width: 3.5rem;
+            margin: 0.3rem auto 0.82rem auto;
+        }
+        @include desktop-sm {
+            margin: 0.3rem 0 0.82rem 0;
         }
     }
 

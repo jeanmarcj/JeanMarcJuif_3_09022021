@@ -15,7 +15,6 @@
     background-color:white;
     margin: 0 auto 1rem auto;
     @include primary-shadow;
-    // height: 4.5rem;
   
     display: flex;
     justify-content: flex-start;
@@ -23,6 +22,25 @@
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
+
+    @include mobile-medium {
+        min-width: 20rem;
+        max-width: 30rem;
+    }
+    @include tablet {
+        max-width: 30rem;
+    }
+    @include desktop-sm {
+        margin: 0;
+        min-width: 18rem;
+        width: 18rem;
+    }
+    @include desktop-md {
+        width: 21rem;
+    }
+    @include desktop-lg {
+        width: 25rem;
+    }
 
     &__description {
         width: 100%;
@@ -36,7 +54,20 @@
 
         .description-title {
             margin: 0.8rem 0;
+            font-size: 1.05rem;
             @extend %text-ellipsis;
+            @include mobile-medium {
+                font-size: 1.17rem;
+            }
+            @include desktop-sm {
+                font-size: 1.05rem;
+            }
+            @include desktop-md {
+                font-size: 1.17rem;
+            }
+            @include desktop-lg {
+                font-size: 1.25rem;
+            }
         }
 
         .description-subtitle-price {
@@ -48,8 +79,14 @@
 
             .description-subtitle {
                 min-width: 0;
-                margin: 0;
                 @extend %text-ellipsis;
+
+                @include desktop-sm {
+                    font-size: 0.9rem;
+                }
+                @include desktop-md {
+                    font-size: 1rem;
+                }
             }
 
             .description-price {
@@ -94,84 +131,5 @@
 
     &:hover .check-icon {
         animation: slidein 0.6s ease-in-out;
-    }
-}
-
-.menu-item-card {
-    border: 1px solid white;
-    margin: 0 auto 1rem auto;
-    background-color: white;
-    border-radius: 20px;
-    @include primary-shadow;
-    opacity: 0;
-    @include mobile-medium {
-        max-width: 20rem;
-    }
-    @include tablet {
-        max-width: 30rem;
-    }
-    @include desktop-sm {
-        margin: 0;
-        width: 18rem;
-    }
-    @include desktop-md {
-        width: 21rem;
-    }
-    @include desktop-lg {
-        width: 25rem;
-    }
-    &__title {
-        width: 80%;
-        margin: 1.06rem 0 0 0.8rem;
-        font-size: 1.05rem;
-        @extend %text-ellipsis;
-        @include tablet {
-            font-size: 1.15rem;
-        }
-        @include desktop-sm {
-            font-size: 1.05rem;
-        }
-        @include desktop-md {
-            font-size: 1.10rem;
-        }
-        @include desktop-lg {
-            font-size: 1.25rem;
-        }
-    }
-    // Container <div>
-    &__description {
-        margin: 0.5rem 1.44rem 0.8rem 0.8rem;
-        display: flex;
-        justify-content: space-between;
-        p {
-            // border: 1px solid green;
-            font-size: 0.88rem;
-            @extend %text-ellipsis;
-            /* Important de donnner une largeur pour 'ellipsis' */
-            // width: 16rem;
-            width: 85%;
-            @include tablet {
-                font-size: 1.1rem;
-            }
-            @include desktop-sm {
-                font-size: 0.68rem;
-                line-height: 1.9;
-            }
-            @include desktop-md {
-                // width: 17rem;
-                font-size: 0.85rem;
-                line-height: 1.2;
-            }
-            @include desktop-lg {
-                // width: 21rem;
-                font-size: 1rem;
-            }
-        }
-        &__price {
-            font-weight: 600;
-            @include tablet {
-                font-size: 1.1rem;
-            }
-        }
     }
 }
