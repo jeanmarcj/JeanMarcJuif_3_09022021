@@ -642,15 +642,82 @@ p {
   transition: 0.5s 0s ease;
 }
 
-.menu-item-card__description p, .menu-item-card__title {
+.menu-item-card__description p, .menu-item-card__title, .menu-item__description .description-subtitle-price .description-subtitle, .menu-item__description .description-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.menu-item {
+  background-color: white;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0px 3px 15px 0px #92929265;
+  -webkit-box-shadow: 0px 3px 15px 0px #92929265;
+  -moz-box-shadow: 0px 3px 15px 0px #92929265;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu-item__description {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.menu-item__description .description-title {
+  margin: 0.8rem 0;
+}
+.menu-item__description .description-subtitle-price {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item__description .description-subtitle-price .description-subtitle {
+  min-width: 0;
+  margin: 0;
+}
+.menu-item__description .description-subtitle-price .description-price {
+  padding: 0 1rem;
+}
+.menu-item__description .description-subtitle-price .description-price span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menu-item .menu-item-check {
+  background: #99E2D0;
+  font-size: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+  transition: all 0.5s;
+}
+.menu-item .menu-item-check .check-icon {
+  color: white;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-item:hover .menu-item-check {
+  width: 20%;
+}
+.menu-item:hover .menu-item__description {
+  width: 80%;
+}
+.menu-item:hover .check-icon {
+  animation: slidein 0.6s ease-in-out;
+}
+
 .menu-item-card {
   border: 1px solid white;
-  margin-bottom: 1rem;
   margin: 0 auto 1rem auto;
   background-color: white;
   border-radius: 20px;
@@ -780,7 +847,7 @@ p {
   }
 }
 /* ------------------------------------------*/
-/* fade in & translateY restaurants template */
+/* fadein & translateY restaurants template */
 /* ------------------------------------------*/
 @keyframes fadein {
   0% {
@@ -792,61 +859,15 @@ p {
     transform: translateY(0);
   }
 }
-/* TODO: Check - Validation animation on restaurants template */
-/* Validation animation icon */
-@keyframes validebtn {
-  0% {
-    transform: rotade(-90deg);
+/* ----------------------------------------*/
+/* slidein check-icon restaurants template */
+/* ----------------------------------------*/
+@keyframes slidein {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg);
   }
-  20% {
-    transform: rotade(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotade(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotade(-30deg) scale(1.08);
-  }
-  100% {
-    transform: rotate(5deg) scale(1);
-  }
-}
-/* checkbox animation */
-@keyframes checkbox {
-  0% {
-    transform: translate(50px, 0);
-  }
-  20% {
-    transform: translate(30px, 0);
-  }
-  40% {
-    transform: translate(20px, 0);
-  }
-  60% {
-    transform: translate(15px, 0);
-  }
-  80% {
-    transform: translate(7px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
-  }
-}
-@keyframes checkbox-contain {
-  0% {
-    transform: translate(50px, 0);
-  }
-  40% {
-    transform: translate(25px, 0);
-  }
-  70% {
-    transform: translate(12px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 /*  ------
@@ -1105,7 +1126,7 @@ p {
   }
 }
 /* ------------------------------------------*/
-/* fade in & translateY restaurants template */
+/* fadein & translateY restaurants template */
 /* ------------------------------------------*/
 @keyframes fadein {
   0% {
@@ -1117,61 +1138,15 @@ p {
     transform: translateY(0);
   }
 }
-/* TODO: Check - Validation animation on restaurants template */
-/* Validation animation icon */
-@keyframes validebtn {
-  0% {
-    transform: rotade(-90deg);
+/* ----------------------------------------*/
+/* slidein check-icon restaurants template */
+/* ----------------------------------------*/
+@keyframes slidein {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg);
   }
-  20% {
-    transform: rotade(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotade(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotade(-30deg) scale(1.08);
-  }
-  100% {
-    transform: rotate(5deg) scale(1);
-  }
-}
-/* checkbox animation */
-@keyframes checkbox {
-  0% {
-    transform: translate(50px, 0);
-  }
-  20% {
-    transform: translate(30px, 0);
-  }
-  40% {
-    transform: translate(20px, 0);
-  }
-  60% {
-    transform: translate(15px, 0);
-  }
-  80% {
-    transform: translate(7px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
-  }
-}
-@keyframes checkbox-contain {
-  0% {
-    transform: translate(50px, 0);
-  }
-  40% {
-    transform: translate(25px, 0);
-  }
-  70% {
-    transform: translate(12px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 /*  ======================
@@ -1416,7 +1391,7 @@ footer {
   }
 }
 /* ------------------------------------------*/
-/* fade in & translateY restaurants template */
+/* fadein & translateY restaurants template */
 /* ------------------------------------------*/
 @keyframes fadein {
   0% {
@@ -1428,61 +1403,15 @@ footer {
     transform: translateY(0);
   }
 }
-/* TODO: Check - Validation animation on restaurants template */
-/* Validation animation icon */
-@keyframes validebtn {
-  0% {
-    transform: rotade(-90deg);
+/* ----------------------------------------*/
+/* slidein check-icon restaurants template */
+/* ----------------------------------------*/
+@keyframes slidein {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg);
   }
-  20% {
-    transform: rotade(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotade(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotade(-30deg) scale(1.08);
-  }
-  100% {
-    transform: rotate(5deg) scale(1);
-  }
-}
-/* checkbox animation */
-@keyframes checkbox {
-  0% {
-    transform: translate(50px, 0);
-  }
-  20% {
-    transform: translate(30px, 0);
-  }
-  40% {
-    transform: translate(20px, 0);
-  }
-  60% {
-    transform: translate(15px, 0);
-  }
-  80% {
-    transform: translate(7px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
-  }
-}
-@keyframes checkbox-contain {
-  0% {
-    transform: translate(50px, 0);
-  }
-  40% {
-    transform: translate(25px, 0);
-  }
-  70% {
-    transform: translate(12px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 /*  ------------
