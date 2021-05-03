@@ -1,49 +1,87 @@
 // layouts/_keyframes.scss
 
 /* ------------------------------ */
-/* Loader keyframes - index.html  */
+/* Auto Loader keyframes - index.html  */
 /* ------------------------------ */
 
-@keyframes start-loading {
-  0% {
-      opacity: 0;
-      background: rgb(134, 133, 133);
+  @keyframes start-loading {
+    0% {
+        opacity: 0;
+        background: rgb(134, 133, 133);
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        background: white;
+    }
   }
-  75% {
-      opacity: 0;
+  @-webkit-keyframes start-loading {
+    0% {
+        opacity: 0;
+        background: rgb(134, 133, 133);
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        background: white;
+    }
   }
-  100% {
-      opacity: 1;
-      background: white;
-  }
-}
-@keyframes display-off {
-  to {
-      visibility: hidden;
-  }
-}
 
-/* Bouncing balls keyframe */
-@keyframes bouncing-loader {
-  to {
-    opacity: 1;
-    transform: translate3d(0, -16px, 0);
+  @keyframes display-off {
+    to {
+        visibility: hidden;
+    }
   }
-}
+  @-webkit-keyframes display-off {
+    to {
+        visibility: hidden;
+    }
+  }
+
+/* Bouncing balls keyframes */
+  @keyframes bouncing-loader {
+    to {
+      opacity: 1;
+      transform: translate3d(0, -16px, 0);
+    }
+  }
+  @-webkit-keyframes bouncing-loader {
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, -16px, 0);
+              transform: translate3d(0, -16px, 0);
+    }
+  }
 
 /* ------------------------------------------*/
 /* fadein & translateY restaurants template */
 /* ------------------------------------------*/
-    @keyframes fadein {
-      0% {
-          opacity: 0;
-          transform: translateY(25px);
-      }
-      100% {
-          opacity: 1;
-          transform: translateY(0);
-      }
+  @keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(25px);
+                transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+  }
 
 /* ----------------------------------------*/
 /* slidein check-icon restaurants template */
@@ -52,4 +90,8 @@
   @keyframes slidein {
     from { transform: translate(-50%, -50%) rotate(90deg); }
     to   { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @-webkit-keyframes slidein {
+    from { -webkit-transform: translate(-50%, -50%) rotate(90deg); transform: translate(-50%, -50%) rotate(90deg); }
+    to   { -webkit-transform: translate(-50%, -50%) rotate(360deg); transform: translate(-50%, -50%) rotate(360deg); }
   }

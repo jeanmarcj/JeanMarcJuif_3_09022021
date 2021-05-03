@@ -11,13 +11,14 @@
 }
 
 .menu-item {
-    // border: 1px solid white;
     background-color:white;
     margin: 0 auto 1rem auto;
     @include primary-shadow;
   
     display: flex;
+    display: -webkit-box;
     justify-content: flex-start;
+    -webkit-box-pack: start;
     
     border-radius: 20px;
     overflow: hidden;
@@ -47,10 +48,16 @@
         padding: 0 1rem;
 
         display: flex;
+        display: -webkit-box;
+        
         flex-direction: column;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
         justify-content: center;
+        -webkit-box-pack: center;
 
         transition: all 0.5s;
+        -webkit-transition: all 0.5s;
 
         .description-title {
             margin: 0.8rem 0;
@@ -73,9 +80,12 @@
         .description-subtitle-price {
             width: 100%;
             margin-bottom: 0.8rem;
+            display: -webkit-box;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-pack: justify;
+                justify-content: space-between;
+            -webkit-box-align: center;
+                align-items: center;
 
             .description-subtitle {
                 min-width: 0;
@@ -96,7 +106,6 @@
                     display: block;
                     font-weight: bold;
                     font-size: 1.2rem;
-
                 }
             }
         }
@@ -109,6 +118,7 @@
         position: relative;
         width: 0;
 
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
 
         .check-icon {
@@ -119,6 +129,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
         }
     }
     &:hover .menu-item-check {
@@ -131,5 +142,6 @@
 
     &:hover .check-icon {
         animation: slidein 0.6s ease-in-out;
+        -webkit-animation: slidein 0.6s ease-in-out;
     }
 }

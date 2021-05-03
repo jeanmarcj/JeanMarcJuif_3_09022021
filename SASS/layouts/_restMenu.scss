@@ -7,17 +7,19 @@
         &__menu-header {
             margin: 2.5rem 1rem;
             display: flex;
+            display: -webkit-box;
             justify-content: space-between;
+            -webkit-box-pack: justify;
             @include mobile-medium {
                 justify-content: center;
+                -webkit-box-pack: center;
             }
-            // Ajout
+
             position: relative;
 
             &__title {
                 font-family: "Shrikhand", sans-serif;
                 font-weight: 100;
-                /* font-weight: lighter; */
                 font-size: 1.4rem;
                 letter-spacing: 0.05rem;
                 @include tablet {
@@ -46,13 +48,13 @@
                     margin: 5rem 0;
                 }
                 &__container {
-                    // border: 1px solid blue;
                     @include desktop-sm {
+                        display: -webkit-box;
                         display: flex;
-                        justify-content: space-between;
+                        -webkit-box-pack: justify;
+                            justify-content: space-between;
                         flex-wrap: wrap;
                     }
-
                 }
             }
         }

@@ -55,11 +55,9 @@
             }
         }
         &__nav a:nth-child(1) i {
-            // border: 1px solid red;
             font-size: 1rem;
         }
         &__nav a:nth-child(2) i {
-            // border: 1px solid green;
             font-size: 0.60rem;
         }
         &__nav a span {
@@ -71,36 +69,3 @@
             text-decoration: underline;
         }
     }
-
-    // .logo {
-    //     font-family: $logo-font;
-    //     color: white;
-    //     font-size: 1.15rem;
-    //     font-weight: 100;
-    //     margin: 1.5rem 0 1rem 0;
-    // }
-
-    // .footer-container a {
-    //     display: block;
-    //     font-weight: 300;
-    //     text-decoration: none;
-    //     line-height: 1.5rem;
-    // }
-
-    // .footer-container a:last-child {
-    //     padding-bottom: 2.3125rem;
-    // }
-
-    // .footer-container a:nth-child(2) i {
-    //     border: 1px solid red;
-    //     font-size: 1rem;
-    // }
-
-    // .footer-container a:nth-child(3) i {
-    //     // border: 1px solid green;
-    //     font-size: 0.60rem;
-    // }
-
-    // .footer-container a span {
-    //     padding-left: 0.4rem;
-    // }

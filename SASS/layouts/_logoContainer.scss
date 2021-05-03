@@ -9,11 +9,17 @@
             width: 10.125rem;
         }
         &__left-arrow {
-            // border: 1px solid red;
             font-size: 1.5rem;
             color: $footer-bg;
             position: absolute;
             left: 1.44rem;
-            top: 2.6rem;
+            // top: 2.6rem;
+            &:hover {
+                transform: translateX(-4px);
+                -webkit-transform: translateX(-4px);
+            }
+            @include desktop-sm {
+                top: 2.6rem;
+            }
         }
     }

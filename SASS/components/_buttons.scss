@@ -6,8 +6,11 @@
 
     .btn {
         margin: 2rem auto;
+        display: -webkit-box;
         display: flex;
+        -webkit-box-align: center !important;
         align-items: center !important;
+        -webkit-box-pack: center !important;
         justify-content: center !important;
         color: white;
 
@@ -15,7 +18,7 @@
             border-radius: $btn-rad;
             padding: 0 1.31rem;
             height: 3.06rem;
-            width: 10rem;
+            // width: 10rem;
             text-align: center;
             position: relative;
             z-index: 1;
@@ -23,8 +26,13 @@
             line-height: 3;
             @include btn-shadow-light;
             background: linear-gradient(to bottom,  rgba(255,163,229,0.91) 0%,rgba(252,155,227,0.91) 8%,rgba(235,115,218,0.95) 47%,rgba(161,91,219,1) 93%);
+            background: -webkit-gradient(linear,  left top, left bottom,  from(rgba(255,163,229,0.91)),color-stop(8%, rgba(252,155,227,0.91)),color-stop(47%, rgba(235,115,218,0.95)),color-stop(93%, rgba(161,91,219,1)));
+            
             transition: box-shadow 500ms, background 1000ms;
-
+            -webkit-transition: background 1000ms, -webkit-box-shadow 500ms;
+            transition: background 1000ms, -webkit-box-shadow 500ms;
+            transition: box-shadow 500ms, background 1000ms, -webkit-box-shadow 500ms;
+            
             @include tablet {
                 width: 15rem;
             }
@@ -46,6 +54,7 @@
                 left: 0;
                 // background: red;
                 background: linear-gradient(to bottom,  rgba(255,186,234,1) 0%,rgba(249,184,232,1) 8%,rgba(234,145,221,1) 46%,rgba(172,121,216,1) 93%);
+                background: -webkit-gradient(linear,  left top, left bottom,  from(rgba(255,186,234,1)),color-stop(8%, rgba(249,184,232,1)),color-stop(46%, rgba(234,145,221,1)),color-stop(93%, rgba(172,121,216,1)));
 
                 opacity: 0;
                 z-index: -1;

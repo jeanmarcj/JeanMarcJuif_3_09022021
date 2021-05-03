@@ -5,11 +5,13 @@
   "keywords": [],
   "license": "ISC",
   "author": "Jean-Marc Juif",
+  "browserslist": "last 3 versions",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "sass": "sass --watch SASS/style.scss:css/main.css"
+    "sass": "sass --watch SASS/style.scss:css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d./css/prefixed/"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"

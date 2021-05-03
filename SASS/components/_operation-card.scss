@@ -16,7 +16,9 @@
         background-color: $lightgray-color;
         @include primary-shadow;
         display: flex;
-        align-items: center;//Idéal pour le positionnement en hauteur !
+        display: -webkit-box;
+        align-items: center;
+        -webkit-box-align: center;
         @include desktop-sm {
             margin: 0;
             max-width: 18.5rem;
@@ -69,36 +71,11 @@
             background-color: #ffe8f8;
     
             transition: background-color ease-in-out 250ms;
+            -webkit-transition: background-color ease-in-out 250ms;
+
             &>i {
                 color: $primary-color;
             } 
         }
 
     }
-
-    // .operation-card:hover {
-    //     cursor: pointer;
-    //     background-color: #ffe8f8;
-
-    //     transition: background-color ease-in-out 250ms;
-    //     &>i {
-    //         color: $primary-color;
-    //     }
-    // }
-    
-    // .operation-card i {
-    //     position: absolute;
-    //     left: 38px;
-    //     font-size: 1.2rem;
-    //     color: $darkgray-color;
-    // }
-    // .operation-card:nth-child(1) > i {
-    //     left: 43px;
-    // }
-    // .operation-title {
-    //     // border: 1px solid green;
-    //     font-weight: 500;
-    //     font-size: 0.8rem;
-    //     position: absolute;
-    //     left: 76px;
-    // }
