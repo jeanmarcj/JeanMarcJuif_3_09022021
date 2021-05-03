@@ -4,8 +4,10 @@ Lien vers Github pages :
 Sujet git : Fix (beug), feat (fonctionnalité), impl (implementation), initial
 https://jeanmarcj.github.io/JeanMarcJuif_3_09022021/index.html
 
-Lancer SASS :
+Lancer SASS (en local) :
 ./dart-sass/sass SASS/style.scss css/main.css --watch
+Lancer SASS (en global via npm) :
+npm run sass
 
 Ordre d'importation des fichiers SASS :
 1. Utils :
