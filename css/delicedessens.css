@@ -1,0 +1,5 @@
+/* Background image for the template */
+.rest-img-container {
+    background-image: url(../img/restaurants/delice_des_sens.jpg);
+    background-position: 50% 60%;
+}

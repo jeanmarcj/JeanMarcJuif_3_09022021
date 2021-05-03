@@ -209,13 +209,6 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 /**
  * Correct the padding in Firefox.
  */
@@ -498,13 +491,11 @@ p {
   }
 }
 .operation-card .badge {
-  border: 1px solid #9356DC;
   height: 1.44rem;
   width: 1.44rem;
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
-  line-height: 1.44rem;
   font-size: 1rem;
   padding: 0.3rem;
   text-align: center;
@@ -646,6 +637,7 @@ p {
   background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   transition: 1s 0s ease;
   -webkit-transition: 1s 0s ease;
 }
@@ -1041,6 +1033,7 @@ p {
     ----------- */
 .rest-menu-container__menu-header {
   margin: 2.5rem 1rem;
+  padding-top: 3.5rem;
   display: flex;
   display: -webkit-box;
   justify-content: space-between;
@@ -1058,6 +1051,9 @@ p {
   font-weight: 100;
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
+}
+.rest-menu-container__menu-header__title::first-letter {
+  text-transform: uppercase;
 }
 @media only screen and (min-width: 765px) {
   .rest-menu-container__menu-header__title {
@@ -1617,12 +1613,10 @@ footer {
     Restaurant header large image
     ----------------------------- */
 .rest-img-container {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   height: 16.56rem;
-  background-image: url(../img/restaurants/palette_du_gout.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 55%;
 }
 @media only screen and (min-width: 1024px) {
   .rest-img-container {
@@ -1634,11 +1628,11 @@ footer {
     menu - main
     ----------- */
 .rest-menu-container {
-  border: 1px solid #eaeaea;
-  margin: -3.5rem auto 0 auto;
+  margin: -6rem auto 0 auto;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   background-color: #eaeaea;
+  z-index: 1;
 }
 @media only screen and (min-width: 1024px) {
   .rest-menu-container {

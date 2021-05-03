@@ -36,12 +36,10 @@
     Restaurant header large image
     ----------------------------- */
     .rest-img-container {
-        /* border: 1px solid green; */
+        border: 1px solid green;
         height: 16.56rem;
-        background-image: url(../img/restaurants/palette_du_gout.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50% 55%;
         @include desktop-sm {
             background-position: 50% 60%;
         }
@@ -51,11 +49,12 @@
     menu - main
     ----------- */
     .rest-menu-container {
-        border: 1px solid $mediumgray-color;
-        margin: -3.5rem auto 0 auto;
+        // border: 1px solid $mediumgray-color;
+        margin: -6rem auto 0 auto;
         border-top-right-radius: $restaurant-menu-rad;
         border-top-left-radius: $restaurant-menu-rad;
         background-color: $mediumgray-color;
+        z-index: 1;
         @include desktop-sm {
             width: 90%;
         }

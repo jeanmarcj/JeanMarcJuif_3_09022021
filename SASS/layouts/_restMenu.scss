@@ -6,6 +6,7 @@
     .rest-menu-container {
         &__menu-header {
             margin: 2.5rem 1rem;
+            padding-top: 3.5rem;
             display: flex;
             display: -webkit-box;
             justify-content: space-between;
@@ -22,6 +23,9 @@
                 font-weight: 100;
                 font-size: 1.4rem;
                 letter-spacing: 0.05rem;
+                &::first-letter {
+                    text-transform: uppercase;
+                }
                 @include tablet {
                     font-size: 1.9rem;
                     letter-spacing: 0.1rem;

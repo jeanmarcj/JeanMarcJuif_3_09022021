@@ -1,0 +1,5 @@
+/* Background image for the template */
+.rest-img-container {
+    background-image: url(../img/restaurants/palette_du_gout.jpg);
+    background-position: 50% 60%;
+}
