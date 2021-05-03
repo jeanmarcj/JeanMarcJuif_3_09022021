@@ -1629,10 +1629,10 @@ footer {
     ----------- */
 .rest-menu-container {
   margin: -6rem auto 0 auto;
+  padding-bottom: 1rem;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   background-color: #eaeaea;
-  z-index: 1;
 }
 @media only screen and (min-width: 1024px) {
   .rest-menu-container {

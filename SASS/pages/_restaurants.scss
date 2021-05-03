@@ -51,10 +51,11 @@
     .rest-menu-container {
         // border: 1px solid $mediumgray-color;
         margin: -6rem auto 0 auto;
+        padding-bottom: 1rem;
         border-top-right-radius: $restaurant-menu-rad;
         border-top-left-radius: $restaurant-menu-rad;
         background-color: $mediumgray-color;
-        z-index: 1;
+
         @include desktop-sm {
             width: 90%;
         }
