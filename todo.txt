@@ -94,12 +94,18 @@ Reproduire les autres pages de menu --> A faire.
 
 Session du 27/04/2021
 Problème avec le remplissage du coeur dans le template restaurants --> OK
-Le coeur doit pouvoir se remplir uniquement en version desktop...
 Intégration de l'animation check-box --> OK.
 Intégrer une fonction pour l'animation fade-in dans le SCSS ?
-Intégrer SASS dans le projet en version globale (via node).
-Validation W3C (ajouter un header dans les pages resturant pour validation W3C)
-Présentation du projet en PPT pour soutenance.
+Intégrer SASS dans le projet en version globale (via node) --> OK
+Présentation du projet en PPT pour soutenance --> OK
+
+Session du 04/04/2021
+Validation CSS erreur :
+- “text” n'est pas une valeur de “background-clip” : text
+- La propriété “backdrop-filter” n'existe pas : blur(1rem)
+- Corrections à faire sur la présentation.
+- Ajouter l'état des cours suivi dans la présentation (slide).
+
 
 
 
